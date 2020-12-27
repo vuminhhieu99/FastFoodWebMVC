@@ -1,0 +1,67 @@
+﻿@model CnWeb_FastFood.Models.EF.Customer
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@section header
+{
+    Khách hàng - Thêm khách hàng
+}
+
+
+
+@using (Html.BeginForm("Create", "Customer", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="form-group">
+        <div class="col-md-10">
+            <label for="exampleInputEmail1">Tên khách hàng</label>
+            <input type="text" class="form-control" name="name" placeholder="Nhập tên khách hàng ..." value=" @Html.DisplayFor(model => model.name)">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            <label for="exampleInputEmail1">Số điện thoại</label>
+            <input type="number" class="form-control" name="phone" placeholder="Nhập số điện thoại ..." value=" @Html.DisplayFor(model => model.phone)">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            <label for="exampleInputEmail1">Địa chỉ</label>
+            <input type="text" class="form-control" name="address" placeholder="Nhập tên địa chỉ ..." value=" @Html.DisplayFor(model => model.address)">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            <label for="exampleInputEmail1">UserName</label>
+            <input type="text" class="form-control" name="userName" placeholder="Nhập UserName ..." value=" @Html.DisplayFor(model => model.userName)">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            <label for="exampleInputEmail1">Password</label>
+            <input type="text" class="form-control" name="password" placeholder="Nhập UserName ..." value=" @Html.DisplayFor(model => model.password)">
+        </div>
+    </div>
+
+    <br />
+
+    <button type="submit" class="btn btn-primary">
+        <a class="fa fa-save"></a> &nbsp;Lưu lại
+    </button>
+    <button type="button" class="btn btn-warning">
+        <a class="fa fa-th-list"></a> &nbsp;
+        @Html.ActionLink("Danh sách", "Index")
+    </button>
+</div>
+}

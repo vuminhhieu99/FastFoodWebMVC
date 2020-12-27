@@ -1,0 +1,47 @@
+﻿<div class="row featured__filter">
+    @foreach (var item in ViewBag.ProductSearchList)
+    {
+        var filterCategory = "c" + item.id_category;
+        var price = item.salePrice;
+        string filter = "";
+
+        if (price >= 0 && price <= 100000)
+        {
+            filter = "p1";
+        }
+        else if (price >= 100000 && price <= 200000)
+        {
+            filter = "p2";
+        }
+        else if (price >= 200000 && price <= 300000)
+        {
+            filter = "p3";
+        }
+        else if (price >= 300000 && price <= 400000)
+        {
+            filter = "p4";
+        }
+        else if (price >= 400000 && price <= 500000)
+        {
+            filter = "p5";
+        }
+
+        <div class="col-lg-4 col-md-6 col-sm-6 mix @filterCategory @filter">
+            <div class="product__item">
+                <div class="product__item__pic set-bg" data-setbg="/Areas/Admin/Content/Photos/@item.mainPhoto">
+                    <ul class="product__item__pic__hover">
+                        <li><a href="/ShopDetail/Index/@item.id_product"><i class="fa fa-info"></i></a></li>
+                        <li><a href="/ShopCart/AddItem?productId=@item.id_product&quantity=1"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+                <div class="product__item__text">
+                    <h6><a href="#">@item.productName</a></h6>
+                    <h5>@item.salePrice</h5>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+

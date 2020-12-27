@@ -1,0 +1,157 @@
+﻿@model CnWeb_FastFood.Models.EF.ProductView
+
+@{
+    ViewBag.Title = "Filter";
+   Layout = "/Areas/Admin/Views/Shared/_AdminlteLayout.cshtml";
+}
+
+@section header
+{
+    Sản phẩm - Bộ lọc sản phẩm
+}
+
+
+@using (Html.BeginForm("Index2", "Product", FormMethod.Get, new { id = "form1" }))
+{
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <table style="width:50%">
+            <col style="width:25%">
+            <col style="width:25%">
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Mã sản phẩm</label>
+                            <input type="number" min="0" class="form-control" name="idProduct" placeholder="Nhập mã sản phẩm ..." style="width:332px">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Tên sản phẩm</label>
+                            <input type="text" class="form-control" name="name" placeholder="Nhập tên sản phẩm ..." ) style="width:332px">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Loại sản phẩm</label><br />
+                            @Html.DropDownList("category", (IEnumerable<SelectListItem>)ViewBag.CategoryList, "  --  Loại sản phẩm  --  ", new { @class = "combobox", @style = "height:32px; width:332px" })
+
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Có sẵn</label><br />
+
+                            <input type="radio" name="availability" value="True" id="True"> Có &nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="availability" value="False" id="False"> Không
+
+                        </div>
+                    </div>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Giá tiền từ (đ)</label>
+                            <input type="number" min="0" step="1000" class="form-control" name="priceFrom" placeholder="Giá tiền sản phẩm từ ...">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">đến (đ)</label>
+                            <input type="number" min="0" step="1000" class="form-control" name="priceTo" placeholder="đến ...">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Sale từ (%)</label>
+                            <input type="number" step="1" min="0" max="100" class="form-control" name="salePercentFrom" placeholder="% Sale sản phẩm từ ...">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">đến (%)</label>
+                            <input type="number" step="1" min="0" max="100" class="form-control" name="salePercentTo" placeholder="đến ...">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Giá sale từ (đ)</label>
+                            <input type="number" min="0" step="1000" class="form-control" name="salePriceFrom" placeholder="Giá sale từ...">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">đến (đ)</label>
+                            <input type="number" min="0" step="1000" class="form-control" name="saleTo" placeholder="đến...">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Mức đánh giá từ &nbsp;(<i class="fa fa-star"></i>) </label>
+                            <input type="number" step="0.1" min="0" max="5" class="form-control" name="rateFrom" placeholder="Mức đánh giá từ...">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">đến &nbsp;(<i class="fa fa-star"></i>) </label>
+                            <input type="number" step="0.1" min="0" max="5" class="form-control" name="rateTo" placeholder="đến ...">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+            </tr>
+        </table>
+        <br />
+
+        <button type="submit" class="btn btn-primary" style="width:110px;">
+            <i class="fa fa-filter"></i> &nbsp;Lọc
+        </button>
+        <button type="button" class="btn btn-warning">
+            <i class="fa fa-th-list"></i> &nbsp;
+            @Html.ActionLink("Danh sách", "Index")
+        </button>
+    </div>
+}

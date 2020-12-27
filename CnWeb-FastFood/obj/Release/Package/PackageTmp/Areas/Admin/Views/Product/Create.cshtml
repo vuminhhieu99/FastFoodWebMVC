@@ -1,0 +1,197 @@
+﻿@model CnWeb_FastFood.Models.EF.Product
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@section header
+{
+    Sản phẩm - Thêm sản phẩm
+}
+
+
+
+@using (Html.BeginForm("Create", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <table style="width:100%">
+            <col style="width:25%">
+            <col style="width:25%">
+            <col style="width:25%">
+            <col style="width:25%">
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Tên sản phẩm</label>
+                            <input type="text" class="form-control" name="name" placeholder="Thêm tên sản phẩm ..." value=" @Html.DisplayFor(model => model.name)" style="width:332px">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Ngày cập nhật</label>
+                            <input type="date" class="form-control" name="updated" placeholder="Ngày cập nhật ..." value=@Html.Raw(DateTime.Now) style="width:332px">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Loại sản phẩm</label><br />
+                            @Html.DropDownList("id_category", (IEnumerable<SelectListItem>)ViewBag.CategoryList, "  --  Loại sản phẩm  --  ", new { @class = "combobox", @style = "height:32px; width:332px" })
+
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Có sẵn</label><br />
+                            @Html.RadioButtonFor(m => m.availability, "True") Có &nbsp;&nbsp;&nbsp;
+                            @Html.RadioButtonFor(m => m.availability, "False") Không
+                        </div>
+                    </div>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Mô tả sản phẩm</label>
+                            <textarea name="description" id="description" class="form-control" rows="3" placeholder="Thêm mô tả sản phẩm ..." style="width: 740px">@Html.DisplayFor(model => model.description)</textarea>
+
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td colspan="2">
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Thông tin sản phẩm</label>
+                            <textarea name="information" id="information" class="form-control" rows="3" placeholder="Thêm thông tin sản phẩm ..." style="width: 740px">@Html.DisplayFor(model => model.information)</textarea>
+                        </div>
+                    </div>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Giá tiền (đ)</label>
+                            <input type="number" min="0" class="form-control" name="price" placeholder="Giá tiền sản phẩm ..." value=" @Html.DisplayFor(model => model.price)">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">% Sale</label>
+                            <input type="number" min="0" max="100" class="form-control" name="salePercent" placeholder="% Sale sản phẩm ..." value=" @Html.DisplayFor(model => model.salePercent)">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td colspan="2">
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Đánh giá sản phẩm</label>
+                            <input type="number" min="0" step="1" class="form-control" name="review" placeholder="Thêm đánh giá sản phẩm ..." value=" @Html.DisplayFor(model => model.review)" style="width:740px">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Giá sale (đ)</label>
+                            <input type="text" class="form-control" name="salePrice" placeholder="Giá sale ..." value="@Html.DisplayFor(model => model.salePrice)">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Mức đánh giá &nbsp;(<i class="fa fa-star"></i>) </label>
+                            <input type="number" step="0.1" min="0" max="5" class="form-control" name="rate" placeholder="Mức đánh giá ..." value=" @Html.DisplayFor(model => model.rate)">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputFile">Ảnh chính cho sản phẩm</label>
+                            <input type="file" id="mainPhoto" name="mainPhoto">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputFile">Ảnh phụ 1 cho sản phẩm</label>
+                            <input type="file" id="photo1" name="photo1">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputFile">Ảnh phụ 2 cho sản phẩm</label>
+                            <input type="file" id="photo2" name="photo2">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputFile">Ảnh phụ 3 cho sản phẩm</label>
+                            <input type="file" id="photo3" name="photo3">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputFile">Ảnh phụ 4 cho sản phẩm</label>
+                            <input type="file" id="photo4" name="photo4">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+            </tr>
+        </table>
+
+
+        <br />
+
+        <button type="submit" class="btn btn-primary" style="width:110px">
+            <i class="fa fa-save"></i> &nbsp;Lưu lại
+        </button>
+        <button type="button" class="btn btn-warning" style="width:110px">
+            <i class="fa fa-th-list"></i> &nbsp;
+            @Html.ActionLink("Danh sách", "Index")
+        </button>
+    </div>
+}

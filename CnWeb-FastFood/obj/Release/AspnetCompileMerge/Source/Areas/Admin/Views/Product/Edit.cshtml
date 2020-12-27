@@ -1,0 +1,298 @@
+﻿@model CnWeb_FastFood.Models.EF.Product
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@section header
+{
+    Sản phẩm - Chỉnh sửa thông tin (#@Model.id_product)
+}
+
+@using (Html.BeginForm("Edit", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.id_product)
+
+
+        <table style="width:100%">
+            <col style="width:25%">
+            <col style="width:25%">
+            <col style="width:25%">
+            <col style="width:25%">
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Tên sản phẩm</label>
+                            <input type="text" class="form-control" name="name" placeholder="Thêm tên sản phẩm ..." value=" @Html.DisplayFor(model => model.name)" style="width:332px">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Ngày cập nhật</label>
+                            <input type="datetime" id="datepicker" class="form-control" name="updated" placeholder="Ngày cập nhật ..." value=@DateTime.Now style="width:332px">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Loại sản phẩm</label><br />
+                            @Html.DropDownList("id_category", (IEnumerable<SelectListItem>)ViewBag.CategoryList, "  --  Loại sản phẩm  --  ", new { @class = "combobox", @style = "height:32px; width:332px" })
+
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Có sẵn</label><br />
+                            @Html.RadioButtonFor(m => m.availability, "True") Có &nbsp;&nbsp;&nbsp;
+                            @Html.RadioButtonFor(m => m.availability, "False") Không
+                        </div>
+                    </div>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Mô tả sản phẩm</label>
+                            <textarea name="description" id="description" class="form-control" rows="3" placeholder="Thêm mô tả sản phẩm ..." style="width: 740px">@Html.DisplayFor(model => model.description)</textarea>
+
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td colspan="2">
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Thông tin sản phẩm</label>
+                            <textarea name="information" id="information" class="form-control" rows="3" placeholder="Thêm thông tin sản phẩm ..." style="width: 740px">@Html.DisplayFor(model => model.information)</textarea>
+                        </div>
+                    </div>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Giá tiền (đ)</label>
+                            <input type="number" min="0" class="form-control" name="price" placeholder="Giá tiền sản phẩm ..." value=" @Html.DisplayFor(model => model.price)">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">% Sale</label>
+                            <input type="number" min="0" max="100" class="form-control" name="salePercent" placeholder="% Sale sản phẩm ..." value=" @Html.DisplayFor(model => model.salePercent)">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td colspan="2">
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Đánh giá sản phẩm</label>
+                            <input type="number" min="0" step="1" class="form-control" name="review" placeholder="Thêm đánh giá sản phẩm ..." value=" @Html.DisplayFor(model => model.review)" style="width:740px">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Giá sale (đ)</label>
+                            <input type="text" class="form-control" name="salePrice" placeholder="Giá sale ..." value="@Html.DisplayFor(model => model.salePrice)">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputEmail1">Mức đánh giá &nbsp;(<i class="fa fa-star"></i>) </label>
+                            <input type="number" step="0.1" min="0" max="5" class="form-control" name="rate" placeholder="Mức đánh giá ..." value=" @Html.DisplayFor(model => model.rate)">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputFile">Ảnh chính cho sản phẩm</label>
+                            <input type="file" id="mainPhoto" name="mainPhoto">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <img height="100" src="/Areas/Admin/Content/Photos/@Model.mainPhoto" />
+                        </div>
+                    </div>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputFile">Ảnh phụ 1 cho sản phẩm</label>
+                            <input type="file" id="photo1" name="photo1">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputFile">Ảnh phụ 2 cho sản phẩm</label>
+                            <input type="file" id="photo2" name="photo2">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputFile">Ảnh phụ 3 cho sản phẩm</label>
+                            <input type="file" id="photo3" name="photo3">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <label for="exampleInputFile">Ảnh phụ 4 cho sản phẩm</label>
+                            <input type="file" id="photo4" name="photo4">
+                        </div>
+                    </div>
+                    <br />
+                </td>
+            </tr>
+        </table>
+
+
+        <br />
+
+        <button type="submit" class="btn btn-primary btn-admin" style="width:110px">
+            <a class="fa fa-save"></a> &nbsp;Lưu lại
+        </button>
+        <button type="button" class="btn btn-warning btn-admin" style="width:110px">
+            <a class="fa fa-th-list"></a> &nbsp;
+            @Html.ActionLink("Danh sách", "Index")
+        </button>
+    </div>
+}
+@section Scripts {
+    
+    <script src="/Assets/Admin/LTE/plugins/jQuery/jQuery-2.1.4.min.js" type="text/javascript"></script>
+    <!-- Bootstrap 3.3.2 JS -->
+    <script src="/Assets/Admin/LTE/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- Select2 -->
+    <script src="/Assets/Admin/LTE/plugins/select2/select2.full.min.js" type="text/javascript"></script>
+    <!-- InputMask -->
+    <script src="/Assets/Admin/LTE/plugins/input-mask/jquery.inputmask.js" type="text/javascript"></script>
+    <script src="/Assets/Admin/LTE/plugins/input-mask/jquery.inputmask.date.extensions.js" type="text/javascript"></script>
+    <script src="/Assets/Admin/LTE/plugins/input-mask/jquery.inputmask.extensions.js" type="text/javascript"></script>
+    <!-- date-range-picker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js" type="text/javascript"></script>
+    <script src="/Assets/Admin/LTE/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+    <!-- bootstrap color picker -->
+    <script src="/Assets/Admin/LTE/plugins/colorpicker/bootstrap-colorpicker.min.js" type="text/javascript"></script>
+    <!-- bootstrap time picker -->
+    <script src="/Assets/Admin/LTE/plugins/timepicker/bootstrap-timepicker.min.js" type="text/javascript"></script>
+    <!-- SlimScroll 1.3.0 -->
+    <script src="/Assets/Admin/LTE/plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <!-- iCheck 1.0.1 -->
+    <script src="/Assets/Admin/LTE/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+    <!-- FastClick -->
+    <script src="/Assets/Admin/LTE/plugins/fastclick/fastclick.min.js" type="text/javascript"></script>
+    <!-- AdminLTE App -->
+    <script src="/Assets/Admin/LTE/dist/js/app.min.js" type="text/javascript"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="/Assets/Admin/LTE/dist/js/demo.js" type="text/javascript"></script>
+    <!-- Page script -->
+    <script>
+        $(function () {
+
+            //Datemask dd/mm/yyyy
+            $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+            //Datemask2 mm/dd/yyyy
+            $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+            //Money Euro
+            $('[data-mask]').inputmask()
+
+            //Date range picker
+            $('#reservation').daterangepicker()
+            //Date range picker with time picker
+            $('#reservationtime').daterangepicker({ timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A' })
+            //Date range as a button
+            $('#daterange-btn').daterangepicker(
+                {
+                    ranges: {
+                        'Today': [moment(), moment()],
+                        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                        'This Month': [moment().startOf('month'), moment().endOf('month')],
+                        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                    },
+                    startDate: moment().subtract(29, 'days'),
+                    endDate: moment()
+                },
+                function (start, end) {
+                    $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+                }
+            )
+
+            //Date picker
+            $('#datepicker').datepicker({
+                autoclose: true
+            })
+
+            //iCheck for checkbox and radio inputs
+            $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+                checkboxClass: 'icheckbox_minimal-blue',
+                radioClass: 'iradio_minimal-blue'
+            })
+            //Red color scheme for iCheck
+            $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+                checkboxClass: 'icheckbox_minimal-red',
+                radioClass: 'iradio_minimal-red'
+            })
+            //Flat red color scheme for iCheck
+            $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+                checkboxClass: 'icheckbox_flat-green',
+                radioClass: 'iradio_flat-green'
+            })
+
+            //Colorpicker
+            $('.my-colorpicker1').colorpicker()
+            //color picker with addon
+            $('.my-colorpicker2').colorpicker()
+
+            //Timepicker
+            $('.timepicker').timepicker({
+                showInputs: false
+            })
+
+        })</script>
+}

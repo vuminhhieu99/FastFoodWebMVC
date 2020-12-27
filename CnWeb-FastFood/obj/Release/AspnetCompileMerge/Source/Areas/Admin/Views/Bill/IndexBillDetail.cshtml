@@ -1,0 +1,47 @@
+﻿@model IEnumerable<CnWeb_FastFood.Models.EF.BillDetail>
+@using PagedList.Mvc
+
+<table id="example1" class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                STT
+            </th>
+            <th>
+                Tên sản phẩm
+            </th>
+            <th>
+                Đơn giá
+            </th>
+            <th>
+                Số lượng
+            </th>
+            <th>
+                Thành tiền
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (var i = 0; i < Model.Count(); i++)
+        {
+            var item = Model.ElementAt(i);
+            <tr>
+                <td>
+                    @(i + 1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Product.name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.amount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.intoMoney)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

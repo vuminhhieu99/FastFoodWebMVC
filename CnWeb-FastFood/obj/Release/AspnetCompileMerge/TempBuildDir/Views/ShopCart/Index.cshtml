@@ -1,0 +1,197 @@
+﻿@model List<CnWeb_FastFood.Models.CartItem>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "/Views/Shared/_MainLayout.cshtml";
+}
+
+@section Title{
+    FastFood | Giỏ hàng
+}
+
+@section Styles
+{
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="/Assets/Client/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/style.css" type="text/css">
+}
+
+<section class="hero hero-normal">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="hero__categories">
+                    <div class="hero__categories__all">
+                        <i class="fa fa-bars"></i>
+                        <span>Thể loại sản phẩm</span>
+                    </div>
+                    <ul>
+                        @Html.Action("CategoryShow", "Home")
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="hero__search">
+                    <div class="hero__search__form">
+                        <form action="#">
+                            <input type="text" placeholder="Nhập thông tin tìm kiếm ...">
+                            <button type="submit" class="site-btn">Tìm kiếm</button>
+                        </form>
+                    </div>
+                    <div class="hero__search__phone">
+                        <div class="hero__search__phone__icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="hero__search__phone__text">
+                            <h5>+84 65.888.888</h5>
+                            <span>Hỗ trợ 24/7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hero Section End -->
+<!-- Hero Section End -->
+<!-- Breadcrumb Section Begin -->
+<section class="breadcrumb-section set-bg" data-setbg="/Assets/Client/img/contactus.png">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb__text">
+                    <h2>Giỏ hàng</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Breadcrumb Section End -->
+<!-- Shoping Cart Section Begin -->
+<section class="shoping-cart spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="shoping__cart__table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="shoping__product">Sản phẩm</th>
+                                <th>Giá tiền</th>
+                                <th>Số lượng</th>
+                                <th>Thành tiền</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @foreach (var item in Model)
+                            {
+                                <tr id="row_@item.Products.id_product">
+                                    <td class="shoping__cart__item">
+                                        <img src="/Areas/Admin/Content/Photos/@item.Products.mainPhoto" alt="" width="100">
+                                        <h5>@item.Products.name</h5>
+                                    </td>
+                                    <td class="shoping__cart__price" data-price="@item.Products.salePrice">
+                                        @item.Products.salePrice đ
+                                    </td>
+                                    <td class="shoping__cart__quantity">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" class="txtquantity" data-id="@item.Products.id_product" value="@item.Amount">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="shoping__cart__total">
+                                        @item.IntoMoney đ
+                                    </td>
+                                    <td class="shoping__cart__item__close">
+                                        <span class="icon_close">
+                                        </span>
+                                        @Ajax.ActionLink("Delete","Delete", new { @id = item.Products.id_product }, new AjaxOptions
+                                        {   Confirm =" Bạn có muốn xóa bản ghi này?",
+                                            OnComplete = "$('#row_"+ @item.Products.id_product + "').remove()",
+                                            HttpMethod = "Delete"
+                                        })
+
+                                    </td>
+                                </tr>
+
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="shoping__cart__btns">
+                    <a href="#" class="primary-btn cart-btn" id="btnContinue">Tiếp tục mua</a>
+                    <a href="#" class="primary-btn cart-btn cart-btn-right" id="btnDeleteAll">
+                        Xoá hết
+                    </a>
+                    <a href="#" class="primary-btn cart-btn cart-btn-right" id="btnUpdate">
+                        <span class="icon_loading"></span>
+                        Cập nhật giỏ
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="shoping__continue">
+                    <div class="shoping__discount">
+                        <h5>Mã giảm giá</h5>
+                        @using (Html.BeginForm("Index", "ShopCart", FormMethod.Get, new { id = "form1" }))
+                        {
+                            <input type="text" name="discountCode" id="txtdiscountCode" placeholder="Nhập mã giảm giá ..." value="@ViewBag.discountCode">
+                            <button type="submit" class="site-btn">Áp dụng</button>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="shoping__checkout">
+                    <h5>Tổng giỏ hàng</h5>
+                    <ul>
+                        <li>Tổng tiền gốc <span> đ</span><span id="SubTotal">@Session["SubTotalCartSession"]</span></li>
+                        <li>Tổng tiền cuối <span> đ</span><span id="Total">@Session["TotalCartSession"]</span></li>
+                    </ul>
+                    <a href="#" class="primary-btn" id="checkout">Xác nhận thanh toán</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Shoping Cart Section End -->
+<!-- Js Plugins -->
+
+
+@section Scripts
+{
+    <script src="/Assets/Client/js/jquery-3.3.1.min.js"></script>
+    <script src="/Assets/Client/js/bootstrap.min.js"></script>
+    <script src="/Assets/Client/js/jquery.nice-select.min.js"></script>
+    <script src="/Assets/Client/js/jquery-ui.min.js"></script>
+    <script src="/Assets/Client/js/jquery.slicknav.js"></script>
+    <script src="/Assets/Client/js/mixitup.min.js"></script>
+    <script src="/Assets/Client/js/owl.carousel.min.js"></script>
+    <script src="/Assets/Client/js/main.js"></script>
+    <script src="/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.quantity input').each(function () {
+
+            });
+        });
+    </script>
+    <script type="text/javascript" src="/Assets/Client/Controller/JSshopCart.js"></script>
+}

@@ -1,0 +1,38 @@
+﻿@model CnWeb_FastFood.Models.EF.Category
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@section header
+{
+    Thể loại - Chỉnh sửa thông tin (#@Model.id_category)
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.id_category)
+
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="exampleInputEmail1">Tên thể loại</label>
+                <input type="text" class="form-control" name="name" placeholder="Nhập tên thể loại" value=" @Html.DisplayFor(model => model.name)">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:110px">
+            <a class="fa fa-save"></a> &nbsp;Lưu lại
+        </button>
+        <button type="button" class="btn btn-warning" style="width:110px">
+            <a class="fa fa-th-list"></a> &nbsp;
+            @Html.ActionLink("Danh sách", "Index")
+        </button>
+    </div>
+}

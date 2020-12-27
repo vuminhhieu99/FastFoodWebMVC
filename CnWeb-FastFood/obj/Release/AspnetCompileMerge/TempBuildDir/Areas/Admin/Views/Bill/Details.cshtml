@@ -1,0 +1,118 @@
+﻿@model CnWeb_FastFood.Models.EF.Bill
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@section header
+{
+    Đơn hàng - Thông tin đơn hàng (#@Model.id_bill)
+}
+
+
+<div>
+    <table>
+        <tr>
+            <td>
+                <dl class="dl-horizontal">
+                    <dt>
+                        Mã đơn hàng:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.id_bill)
+                    </dd>
+
+                    <dt>
+                        Tên khách hàng:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Customer.name)
+                    </dd>
+
+                    <dt>
+                        Số điện thoại:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.phone)
+                    </dd>
+
+                    <dt>
+                        Địa chỉ:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.address)
+                    </dd>
+
+                    <dt>
+                        Tổng tiền gốc:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.subtotal) &nbsp; đ
+                    </dd>
+
+                    <dt>
+                        Mã giảm giá:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.discountCode)
+                    </dd>
+
+                    <dt>
+                        Số tiền giảm giá:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.discount) &nbsp; đ
+                    </dd>
+
+                    <dt>
+                        Tổng tiền cuối:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.total) &nbsp; đ
+                    </dd>
+
+                    <dt>
+                        Ngày tạo:
+                    </dt>
+
+                    <dd>
+                        @Html.Raw(Convert.ToDateTime(Model.creatDate).ToString("dd/MM/yyyy"))
+                    </dd>
+
+                    <dt>
+                        Trạng thái:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.BillStatus.status)
+                    </dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+
+    <br />
+
+    <h4>
+        <i class="fa fa-list-ol"></i>
+        <b style="color:darkgreen">&nbsp;Chi tiết đơn hàng (#@Model.id_bill)</b>
+    </h4>
+
+
+    @Html.Action("IndexBillDetail", new { @id = Model.id_bill })
+
+</div>
+
+<button type="button" class="btn btn-warning btn-admin">
+    <a class="fa fa-mail-reply"></a> &nbsp;
+    @Html.ActionLink("Trở về", "Index")
+</button>

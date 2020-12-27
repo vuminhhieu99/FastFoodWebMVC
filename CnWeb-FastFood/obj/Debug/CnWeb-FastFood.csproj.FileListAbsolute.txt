@@ -1,0 +1,309 @@
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\CnWeb-FastFood.dll.config
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\CnWeb-FastFood.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\CnWeb-FastFood.pdb
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\csc.exe
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\csc.exe.config
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\csc.rsp
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\csi.exe
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\csi.exe.config
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\csi.rsp
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.AppContext.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Collections.Immutable.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Console.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.IO.Compression.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.IO.FileSystem.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.IO.Pipes.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Reflection.Metadata.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Security.AccessControl.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Security.Claims.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.ValueTuple.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Xml.XPath.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\vbc.exe
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\vbc.exe.config
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\vbc.rsp
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\VBCSCompiler.exe
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\VBCSCompiler.exe.config
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\Antlr3.Runtime.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\EntityFramework.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\EntityFramework.SqlServer.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\Microsoft.Web.Infrastructure.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\Newtonsoft.Json.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.Helpers.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.Mvc.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.Optimization.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.Razor.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.WebPages.Deployment.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.WebPages.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.WebPages.Razor.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\WebGrease.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\EntityFramework.xml
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\EntityFramework.SqlServer.xml
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.Helpers.xml
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.Mvc.xml
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.Optimization.xml
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.Razor.xml
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.WebPages.xml
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.WebPages.Deployment.xml
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.WebPages.Razor.xml
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\Newtonsoft.Json.xml
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\Antlr3.Runtime.pdb
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.csproj.CoreCompileInputs.cache
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.csproj.CopyComplete
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.pdb
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\PagedList.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\PagedList.Mvc.dll
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\PagedList.xml
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\bin\PagedList.Mvc.xml
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\CnWeb-FastFood.dll.config
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\CnWeb-FastFood.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\CnWeb-FastFood.pdb
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\csc.exe
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\csc.exe.config
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\csc.rsp
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\csi.exe
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\csi.exe.config
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\csi.rsp
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.AppContext.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Console.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.IO.Compression.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.IO.Pipes.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Security.Claims.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.ValueTuple.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\vbc.exe
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\vbc.exe.config
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\vbc.rsp
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\VBCSCompiler.exe
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\Antlr3.Runtime.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\EntityFramework.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\Newtonsoft.Json.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\PagedList.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\PagedList.Mvc.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.Helpers.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.Mvc.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.Optimization.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.Razor.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.WebPages.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.WebPages.Razor.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\WebGrease.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\EntityFramework.xml
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\EntityFramework.SqlServer.xml
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\PagedList.xml
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\PagedList.Mvc.xml
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.Helpers.xml
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.Mvc.xml
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.Optimization.xml
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.Razor.xml
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.WebPages.xml
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\System.Web.WebPages.Razor.xml
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\Newtonsoft.Json.xml
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\Antlr3.Runtime.pdb
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.csprojAssemblyReference.cache
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.dll
+C:\Users\ADMIN\Desktop\BTL-CNWeb\Git CnWeb-FastFood\CnWeb-FastFood\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.pdb
+E:\Kì 2 năm 3\Cong nghe Web\CnWeb-FastFood\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.csprojAssemblyReference.cache
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\CnWeb-FastFood.dll.config
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\CnWeb-FastFood.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\CnWeb-FastFood.pdb
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\csc.exe
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\csc.exe.config
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\csc.rsp
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\csi.exe
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\csi.exe.config
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\csi.rsp
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.AppContext.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.Console.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.IO.Compression.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.IO.Pipes.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.Security.Claims.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.ValueTuple.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.Xml.XPath.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\vbc.exe
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\vbc.exe.config
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\vbc.rsp
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\VBCSCompiler.exe
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.csproj.CoreCompileInputs.cache
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.csproj.CopyComplete
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.dll
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.pdb
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\obj\Debug\CnWeb_FastFood.Properties.Resources.resources
+C:\Users\BlueMan\Desktop\Snackshop Web MVC\FastFoodWebMVC\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.csproj.GenerateResource.cache
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\CnWeb-FastFood.dll.config
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\CnWeb-FastFood.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\CnWeb-FastFood.pdb
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\csc.exe
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\csc.exe.config
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\csc.rsp
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\csi.exe
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\csi.exe.config
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\csi.rsp
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.AppContext.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.Console.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.IO.Compression.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.IO.Pipes.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.Security.Claims.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.ValueTuple.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.Xml.XPath.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\vbc.exe
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\vbc.exe.config
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\vbc.rsp
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\VBCSCompiler.exe
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\obj\Debug\CnWeb_FastFood.Properties.Resources.resources
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.csproj.GenerateResource.cache
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.csproj.CoreCompileInputs.cache
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.csproj.CopyComplete
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.pdb
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\Antlr3.Runtime.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\EntityFramework.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\EntityFramework.SqlServer.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\Newtonsoft.Json.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\PagedList.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\PagedList.Mvc.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\System.Web.Helpers.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\System.Web.Mvc.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\System.Web.Optimization.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\System.Web.Razor.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\System.Web.WebPages.Deployment.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\System.Web.WebPages.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\System.Web.WebPages.Razor.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\WebGrease.dll
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\EntityFramework.xml
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\EntityFramework.SqlServer.xml
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\PagedList.xml
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\PagedList.Mvc.xml
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\System.Web.Helpers.xml
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\System.Web.Mvc.xml
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\System.Web.Optimization.xml
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\System.Web.Razor.xml
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\System.Web.WebPages.xml
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\System.Web.WebPages.Deployment.xml
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\System.Web.WebPages.Razor.xml
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\Newtonsoft.Json.xml
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\Antlr3.Runtime.pdb
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\BlueMan\Desktop\FastFood Web MVC\CnWeb-FastFood\obj\Debug\CnWeb-FastFood.csprojAssemblyReference.cache

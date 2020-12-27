@@ -1,0 +1,31 @@
+﻿@model IEnumerable<CnWeb_FastFood.Models.EF.BillStatus>
+
+<div class="section-title">
+    <h2>Danh sách hóa đơn</h2>
+</div>
+<div class="featured__controls header__cart">
+    <ul>
+        <li class="active" data-filter="*">Tất cả</li>
+        @foreach (var item in Model)
+        {
+            var filterName = ".c" + item.id_status;
+        <li data-filter="@filterName">
+            @item.status
+            @{ if (item.id_status == 1)
+                {
+                    <a>&nbsp;<span>@ViewBag.Count_1</span></a>
+                }
+                else if (item.id_status == 2)
+                {
+                    <a>&nbsp;<span>@ViewBag.Count_2</span></a>
+                }
+                else if (item.id_status == 3)
+                {
+                    <a>&nbsp;<span>@ViewBag.Count_3</span></a>
+                }
+            }
+        </li>
+        }
+
+    </ul>
+</div>

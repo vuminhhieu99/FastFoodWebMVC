@@ -1,0 +1,41 @@
+﻿@{
+    if (ViewBag.Keyword != null && ViewBag.Keyword != "")
+    {
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>Kết quả tìm kiếm sản phẩm theo <b style="color:red">"@ViewBag.Keyword"</b></h2>
+                </div>
+            </div>
+        </div>
+
+        if (Model.Count == 0)
+        {
+            <div class="product-title" style="text-align:center">
+                <h4 style="color:red"><b>Không có kết quả phù hợp</b></h4>
+            </div>
+            <br /><br /><br /><br /><br />
+        }
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="/Areas/Admin/Content/Photos/@item.mainPhoto">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="/ShopDetail/Index/@item.id_product"><i class="fa fa-info"></i></a></li>
+                                <li><a href="/ShopCart/AddItem?productId=@item.id_product&quantity=1"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="/ShopDetail/Index/@item.id_product">@item.productName</a></h6>
+                            <h5>@item.price đ</h5>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+}

@@ -1,0 +1,105 @@
+﻿@model IEnumerable<CnWeb_FastFood.Models.EF.ProductView>
+@{
+    ViewBag.Title = "Index";
+    Layout = "/Views/Shared/_MainLayout.cshtml";
+}
+@section Title{
+    FastFood | Mua hàng
+}
+@section Styles
+{
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Assets/Client/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/style.css" type="text/css">
+}
+<section class="hero hero-normal">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="hero__categories">
+                    <div class="hero__categories__all">
+                        <i class="fa fa-bars"></i>
+                        <span>Thể loại sản phẩm</span>
+                    </div>
+                    <ul>
+                        @Html.Action("CategoryShow", "Home")
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="hero__search">
+                    <div class="hero__search__form">
+                        <form action="/Shop/Index" method="get">
+                            <input type="text" id="txtKeyword" name="keyword" placeholder="Nhập thông tin tìm kiếm... " value="@ViewBag.Keyword">
+                            <button type="submit" class="site-btn">Tìm kiếm</button>
+                        </form>
+                    </div>
+                    <div class="hero__search__phone">
+                        <div class="hero__search__phone__icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="hero__search__phone__text">
+                            <h5>+84 65.888.888</h5>
+                            <span>Hỗ trợ 24/7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hero Section End -->
+<section class="breadcrumb-section set-bg" data-setbg="/Assets/Client/img/contactus.png">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb__text">
+                    <h2>Mua hàng</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Breadcrumb Section End -->
+<!-- Product Section Begin -->
+<section class="product spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-5">
+                <div class="sidebar">
+                    @Html.Action("ListCategoryShow")
+                    @Html.Action("ListPriceShow")
+                    <div class="sidebar__item">
+                        @Html.Action("LatestProducts")
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-7">
+                @Html.Action("SaleOff")
+                @Html.Partial("ProductFilterShow")
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Product Section End -->
+@section Scripts{
+    <script src="/Assets/Client/js/jquery-3.3.1.min.js"></script>
+    <script src="/Assets/Client/js/bootstrap.min.js"></script>
+    <script src="/Assets/Client/js/jquery.nice-select.min.js"></script>
+    <script src="/Assets/Client/js/jquery-ui.min.js"></script>
+    <script src="/Assets/Client/js/jquery.slicknav.js"></script>
+    <script src="/Assets/Client/js/mixitup.min.js"></script>
+    <script src="/Assets/Client/js/owl.carousel.min.js"></script>
+    <script src="/Assets/Client/js/main.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            $('.MenuShop').attr("class", "active");
+        }
+    </script>
+}

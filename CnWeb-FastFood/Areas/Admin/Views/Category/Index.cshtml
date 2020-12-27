@@ -1,0 +1,527 @@
+﻿@model PagedList.IPagedList<CnWeb_FastFood.Models.EF.Category>
+@using PagedList.Mvc
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "/Areas/Admin/Views/Shared/_AdminlteLayout.cshtml";
+}
+
+@section Styles
+{
+    <title>AdminLTE 3 | Category</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/fontawesome-free/css/all.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/dist/css/adminlte.min.css">
+
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/toastr/toastr.min.css">
+
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+    <!-- BS Stepper -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/bs-stepper/css/bs-stepper.min.css">
+
+    <!-- dropzonejs -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/dropzone/min/dropzone.min.css">
+
+    <style>
+        body {
+            padding-right: 0 !important
+        }
+    </style>
+}
+
+<!-- Create Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            @using (Ajax.BeginForm("CreateCategoryJson", "Category", new AjaxOptions { HttpMethod = "POST", OnComplete = "fnAddSuccess", OnFailure = "fnAddFail" },
+     new { @name = "myDropzone", id = "CreateCategory", @enctype = "multipart/form-data" }))
+            {
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Thể loại mới</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Tên thể loại </label>
+                            <input type="text" class="form-control" id="name" placeholder="Tên thể loại" name="name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputFile">Ảnh</label>
+                            <div class="card-body card card-default">
+
+                                <div id="actions" class="row">
+                                    <div class="col-lg-6">
+                                        <div class="btn-group w-100">
+                                            <div class="btn btn-success col fileinput-button">
+                                                <i class="fas fa-plus"></i>
+                                                <span>Thêm ảnh</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table table-striped files" id="previews">
+                                    <div id="template" class="row mt-2">
+                                        <div class="col-auto">
+                                            <span class="preview"><img src="data:," alt="" data-dz-thumbnail /></span>
+                                        </div>
+                                        <div class="col d-flex align-items-center">
+                                            <p class="mb-0">
+                                                <span class="lead" data-dz-name></span>
+                                                (<span data-dz-size></span>)
+                                            </p>
+                                            <strong class="error text-danger" data-dz-errormessage></strong>
+                                        </div>
+                                        <div class="col-4 d-flex align-items-center">
+                                            <div class="progress progress-striped active w-100" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                                                <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
+                                            </div>
+                                            <span class="the-progress-text"></span>
+                                        </div>
+                                        <div class="col-auto d-flex align-items-center">
+                                            <div class="btn-group">
+
+                                                <button data-dz-remove class="btn btn-danger delete">
+                                                    <i class="fas fa-trash"></i>
+                                                    <span>Xóa</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="reset" class="btn btn-warning cancel">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Làm mới</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <input type="submit" id="Submit" name="Submit" class="btn btn-primary" value="Lưu" />
+
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+<!-- /. Create Modal -->
+<!-- Header content -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Danh sách thể loại</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Loại sản phẩm</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- /.Header content -->
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <!-- card-header -->
+                    <div class="card-header">
+                        <!-- control content -->
+                        @using (Html.BeginForm("Index", "Category", FormMethod.Get, new { id = "form1" }))
+                        {
+                            <div class="row dataTables_wrapper">
+
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="dataTables_length" id="example1_length">
+                                        <label>
+                                            Show
+                                            @Html.DropDownList("PageSize", (IEnumerable<SelectListItem>)ViewBag.PageSize, new { @class = "custom-select custom-select-sm form-control form-control-sm" })
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div id="example1_filter" class="dataTables_filter">
+                                        <label>
+                                            Search:
+                                            <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="example1" name="searching" value="@ViewBag.SearchString">
+                                        </label>
+                                        <input type="submit" class="btn btn-block btn-warning btn-sm" value="Tìm kiếm" />
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        <!-- /.control content -->
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <!-- button -->
+                        @*<div class="card-footer">*@
+                        <button type="button" class="btn btn-secondary" id="bt_createCategory" data-toggle="modal" data-target="#myModal">
+                            <i class="fa fa-plus-square"></i> &nbsp;
+                            Thêm mới
+                        </button>
+                        @*</div>*@
+                        <!-- /.button-->
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Mã thể loại</th>
+                                    <th>Tên thể loại</th>
+                                    <th>Ảnh</th>
+                                    <th>Chức năng</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr id="row_@item.id_category">
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.id_category)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.name)
+                                        </td>
+                                        <td>
+                                            <img height="20" src="/Areas/Admin/Content/Photos/@item.photo" alt="Chưa có" />
+                                        </td>
+                                        <td>                                            
+                                            <i class="fa fa-edit"></i> &nbsp;
+                                            @Html.ActionLink("Sửa", "Edit", new { id = item.id_category }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                            <i class="fa fa-trash"></i> &nbsp;
+                                            @Ajax.ActionLink("Delete", "Delete", new { @id = item.id_category }, new AjaxOptions
+                                       {
+                                                Confirm = " Bạn có muốn xóa bản ghi này?",
+                                           OnComplete = "DelSuccess(\"" + @item.id_category + "\")",
+                                           HttpMethod = "Delete"
+                                       })
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+                        <!-- phân trang -->
+                        <div class="row dataTables_wrapper">
+
+                            <div class="col-sm-12 col-md-6">
+                                <b style="color:navy">
+                                    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount &nbsp;&nbsp;-&nbsp;&nbsp;
+                                    @if (Model.Count == ViewBag.psize)
+                                    {
+                                        <span>Đang hiển thị (@(((Model.PageNumber * Model.Count) - Model.Count) + 1)-<span class="countItemofPage">@(Model.PageNumber * Model.Count)</span>) / <span class="countItem">@ViewBag.Count</span></span>
+                                    }
+                                    else
+                                    {
+                                        <span>Đang hiển thị (@((ViewBag.Count - Model.Count) + 1)-<span class="countItem">@ViewBag.Count</span>) / <span class="countItem">@ViewBag.Count</span></span>
+                                    }
+                                </b>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                @Html.PagedListPager(Model, page => Url.Action("Index", new { page, pageSize = ViewBag.psize, @searching = @ViewBag.SearchString }), new PagedListRenderOptions
+                           {
+
+                               ContainerDivClasses = new string[] { "dataTables_paginate", "paging_simple_numbers" },
+                               LiElementClasses = new string[] { "paginate_button", "page-item" }
+
+                           })
+                            </div>
+                        </div>
+
+                        <!-- /.phân trang -->
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+
+@section Scripts{
+    <script src="/Assets/Admin/LTE/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/Assets/Admin/LTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables -->
+    <script src="/Assets/Admin/LTE/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/Assets/Admin/LTE/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="/Assets/Admin/LTE/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="/Assets/Admin/LTE/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/Assets/Admin/LTE/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="/Assets/Admin/LTE/dist/js/demo.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="/Assets/Admin/LTE/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- Toastr -->
+    <script src="/Assets/Admin/LTE/plugins/toastr/toastr.min.js"></script>
+
+    <!-- Bootstrap Switch -->
+    <script src="/Assets/Admin/LTE/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <!-- BS-Stepper -->
+    <script src="/Assets/Admin/LTE/plugins/bs-stepper/js/bs-stepper.min.js"></script>
+
+    <!-- dropzonejs -->
+    <script src="/Assets/Admin/LTE/plugins/dropzone/min/dropzone.min.js"></script>
+
+    <script src="/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#example1").DataTable({
+                "paging": false,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": false,
+                "autoWidth": false,
+                "responsive": true,
+
+            });
+
+            // BS-Stepper Init
+            document.addEventListener('DOMContentLoaded', function () {
+                window.stepper = new Stepper(document.querySelector('.bs-stepper'))
+            });
+
+            // Get the template HTML and remove it from the doumenthe template HTML and remove it from the doument
+            var previewNode = document.querySelector("#template");
+            previewNode.id = "";
+            var previewTemplate = previewNode.parentNode.innerHTML;
+            previewNode.parentNode.removeChild(previewNode);
+
+            Dropzone.autoDiscover = false;
+            var myDropzone = $('#CreateCategory').dropzone({
+                //parameter name value
+                paramName: "files",
+                addRemoveLinks: false,
+                //preview template
+                previewTemplate: previewTemplate,
+                //clickable div(bắt bu id
+                clickable: '.fileinput-button',
+                //preview files container Id
+                previewsContainer: "#previews",
+                autoProcessQueue: false,
+                uploadMultiple: false,
+                parallelUploads: 100,
+                maxFiles: 100,
+                //  url:"/", // url here to save file
+                maxFilesize: 100,//max file size in MB,
+
+                dictResponseError: 'Server not Configured',
+                acceptedFiles: ".png,.jpg,.gif,.bmp,.jpeg,.pdf",// use this to restrict file type
+                success: function (file, response) {
+                    if (response.status == true) {
+                        $('.modal').css('display', 'none');
+                        toastr.success('Tạo mới thành công id : ' + response.id_Category);
+                        setTimeout(function () {
+                            window.location.reload();
+                        }, 2000);
+                    }
+                    else {
+                        $('.modal-body > .card-body').append("<p>! Không thể lưu. Vui lòng kiểm tra lại dữ liệu</p>");
+                    }
+                },
+                init: function () {
+                    var self = this;
+                    // config
+                    //self.options.addRemoveLinks = true;
+                    //self.options.dictRemoveFile = "Delete";
+                    //New file added
+                    self.on("addedfile", function (file) {
+                        
+                    });
+                    // Send file starts
+                    self.on("sending", function (file) {
+                        document.querySelector("#myModal .progress").style.opacity = "1";
+                    });
+
+                    // processing file starts
+                    self.on("processing", function (file) {
+                        document.querySelector("#myModal .progress").style.opacity = "1";
+                    });
+
+                    // File upload Progress
+                    self.on("totaluploadprogress", function (progress) {
+                        $("#myModal .progress .progress-bar").width(progress + "%");
+                        $(".the-progress-text").text(progress + '%');
+                    });
+
+                    self.on("queuecomplete", function (progress) {
+                        $('.meter').delay(999).slideUp(999);
+                    });
+
+                    // On removing file
+                    self.on("removedfile", function (file) {
+                        console.log(file);
+                    });
+
+
+                    $('#Submit').on("click", function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        // Validate form here if needed
+
+                        if (self.getQueuedFiles().length > 0) {
+                            self.processQueue();
+
+                        }
+                        else {
+                            self.uploadFiles([]);
+                            $('#CreateCategory').submit();
+                        }
+
+
+                    });
+                    self.on("successmultiple", function (files, response) {
+                        // Gets triggered when the files have successfully been sent.
+                        // Redirect user or notify of success.
+
+                    });
+
+                    $("#myModal .cancel").on('click', function () {
+                        self.removeAllFiles(true);
+                    });
+
+                    $("#myModal .fileinput-button").on('click', function () {
+                        //only update one file
+                        if (self.getQueuedFiles().length > 0) {
+                            self.removeAllFiles(true);
+                        }
+                    });
+
+                }
+            });//end
+
+            // reset then open modal create Category
+            $('#bt_createCategory').click(function () {
+                document.getElementById("CreateCategory").reset();
+                Dropzone.forElement("#CreateCategory").removeAllFiles(true);
+            });
+            //----------------//
+        });
+
+        // reponse after creat Category
+        function fnAddSuccess(data) {
+            var res = JSON.parse(data.responseText);
+            if (res.status == true) {
+                $('.modal').css('display', 'none');
+                toastr.success('Tạo mới thành công id : ' + res.id_Category);
+                setTimeout(function () {
+                    window.location.reload();
+                }, 3000);
+            }
+            else {
+                $('.modal-body > .card-body').append("<p>! Không thể lưu. Vui lòng kiểm tra lại dữ liệu</p>");
+            }
+        };
+
+        function fnAddFail(data) {
+            $('.modal-body > .card-body').append("<p>! Lỗi hệ thống</p>");
+        };
+        //-------------//
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            //add class for slidebar
+            $('#category').addClass('menu-open');
+            $('#category>a').addClass('active');
+            $('#category ul a').addClass('active');
+            //--------------//
+
+            //load data with change pagesize
+            $("#PageSize").change(function () {
+                $("#form1").submit();
+            });
+            //-------------//
+
+            // set class css for ỉtemPage- because pagelist not compatial boostrap 4 in this version of adminLTE
+            $('.pagination a').addClass('page-link');
+            //-------------//
+
+            // check for the same user name
+            $('#CreateCategory #name').on('input', function () {
+                var name = this.value;
+                var ref = this;
+               
+                if (name == "") {
+                    $('#CreateCategory .text-success').remove();
+                    $('#CreateCategory .text-danger').remove();
+                    return false;
+                }
+                $.ajax({
+                    url: '/Admin/Category/CheckName',
+                    data: { name: name },
+                    dataType: 'text',
+                    type: "POST"
+                }).done(function (res) {
+                    var status = JSON.parse(res).status;
+                    $('#CreateCategory .text-success').remove();
+                    $('#CreateCategory .text-danger').remove();
+                    if (status == true) {
+                        $(ref).parent().after('<p class="text-danger"><i class="fas fa-exclamation"></i> Tên đã tồn tại</p>');
+                    }
+                    else {
+                        $(ref).parent().after('<p class="text-success"><i class="fas fa-check"></i> Có thẻ sử dụng</p>');
+                    }
+                });
+            });
+
+        });
+        //---------------------//
+
+
+        // reponse after delete category
+        function DelSuccess(id_category) {
+            var idTrs = "#row_" + id_category;
+            $(idTrs).remove();
+            var countItem = $('.countItem').last().text();
+            countItem = Number(countItem) - 1;
+            $('.countItem').text(countItem);
+
+            var countItemofPage = $('.countItemofPage').first().text();
+            countItemofPage = Number(countItemofPage) - 1;
+            $('.countItemofPage').text(countItemofPage);
+
+            var Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 5000
+            });
+            Toast.fire({
+                icon: 'success',
+                title: ' complish delete witd id ' + id_category
+            })
+        };
+                //---------------------//
+    </script>
+
+}

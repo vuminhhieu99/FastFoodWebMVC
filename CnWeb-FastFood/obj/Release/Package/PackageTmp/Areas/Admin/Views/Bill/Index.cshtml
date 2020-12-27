@@ -1,0 +1,158 @@
+﻿@model PagedList.IPagedList<CnWeb_FastFood.Models.EF.BillView>
+@using PagedList.Mvc
+
+@{
+
+    ViewBag.Title = "Index";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@section header
+{
+    Danh sách đơn hàng
+}
+
+<table style="width:100%; margin-bottom:10px">
+    <tr>
+        <td>
+            @using (Html.BeginForm("Index", "Bill", FormMethod.Get, new { id = "form1" }))
+            {
+                <p style="float:left; color:navy; height:32px"><b>Hiển thị &nbsp; </b>@Html.DropDownList("pageSize") &nbsp; <b>bản ghi / trang </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+                <input type="text" name="searching" value="@ViewBag.SearchString" placeholder="Nhập thông tin tìm kiếm ..." style="width: 400px;" />
+                <input type="submit" value="Tìm kiếm" />
+            }
+        </td>
+        <td>
+            @*<button type="button" class="btn btn-warning btn-admin" style="margin-bottom:10px; margin-left:5px; float: right; width:110px">
+                    <i class="fa fa-plus-square"></i> &nbsp;
+                    @Html.ActionLink("Thêm mới", "Create", "Bill")
+                </button>*@
+            <button type="button" class="btn btn-warning btn-admin" style="margin-bottom:10px; float: right; width:110px">
+                <i class="fa fa-filter"></i> &nbsp;
+                @Html.ActionLink("Bộ lọc", "Filter", "Bill")
+            </button>
+        </td>
+    </tr>
+</table>
+
+<table id="example1" class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Mã đơn hàng</th>
+            <th>Tên khách hàng</th>
+            <th>Điện thoại</th>
+            <th>Địa chỉ</th>
+            <th>Tổng tiền gốc (đ)</th>
+            <th>Mã giảm giá</th>
+            <th>Số tiền giảm (đ) </th>
+            <th>Tổng tiền cuối (đ) </th>
+            <th>Ngày tạo</th>
+            <th>Trạng thái</th>
+            <th>Chức năng</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id_bill)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.customerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.phone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.subtotal)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.discountCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.discount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.total)
+                </td>
+                <td>
+                    @Html.Raw(@Convert.ToDateTime(item.creatDate).ToString("dd/MM/yyyy"))
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.statusName)
+                </td>
+
+                <td>
+
+                    <i class="fa fa-info-circle"></i> &nbsp;
+                    @Html.ActionLink("Xem", "Details", new { id = item.id_bill }) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    @*<i class="fa fa-edit"></i> &nbsp;
+                        @Html.ActionLink("Sửa", "Edit", new { id = item.id_bill }) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa fa-trash"></i> &nbsp;
+                        @Html.ActionLink("Xóa", "Delete", new { id = item.id_bill }, new { onclick = "return confirm('Chắc chắn muốn xoá?');" })*@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@using (Html.BeginForm("Index", "Bill", FormMethod.Get, new { id = "form1" }))
+{
+    <div class="pager">
+        <table style="width:100%">
+            <col style="width:50%">
+            <col style="width:50%">
+            <tr>
+                <td style="float:left">
+                    <b style="color:navy">
+                        Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount &nbsp;&nbsp;-&nbsp;&nbsp;
+                        @if (Model.Count == ViewBag.psize)
+                        {
+                            <span>Đang hiển thị (@(((Model.PageNumber * Model.Count) - Model.Count) + 1)-@(Model.PageNumber * Model.Count)) / @ViewBag.Count</span>
+                        }
+                        else
+                        {
+                            <span>Đang hiển thị (@((ViewBag.Count - Model.Count) + 1)-@(ViewBag.Count)) / @ViewBag.Count</span>
+                        }
+                    </b>
+                </td>
+                <td style="float:right; margin-top:-20px">
+                    @Html.PagedListPager(Model, page => Url.Action("Index", new { page, pageSize = ViewBag.psize, @searching = @ViewBag.SearchString }))
+                </td>
+            </tr>
+        </table>
+    </div>
+}
+<script src="/Assets/Admin/LTE/plugins/jQuery/jQuery-2.1.4.min.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function () {
+        $("#checkAll").click(function () {
+            if (this.checked) {
+                $(".chkbox").prop('checked', $(this).prop('checked', true));
+            }
+            else {
+                $('.chkbox').each(function () { this.checked = false; });
+            }
+        });
+        $('.chkbox').on('click', function () {
+            if ($('.chkbox:checked').length == $('.chkbox').length) {
+                $('#checkAll').prop('checked', true);
+            } else {
+                $('#checkAll').prop('checked', false);
+            }
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(function () {
+        $("#pageSize").change(function () {
+            $("#form1").submit();
+        });
+    });
+</script>

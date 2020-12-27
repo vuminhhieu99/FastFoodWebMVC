@@ -1,0 +1,102 @@
+﻿@model IEnumerable<CnWeb_FastFood.Models.ProductView>
+@{
+    ViewBag.Title = "Index";
+    Layout = "/Views/Shared/_MainLayout.cshtml";
+}
+
+@section Title{
+    FastFood | Trang chủ
+}
+
+@section Styles
+{
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Assets/Client/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/style.css" type="text/css">
+}
+
+@Html.Partial("_BeginContentLayoutHome")
+
+<div class="container">
+
+    @Html.Partial("ProductSearchShow")
+
+</div>
+
+<!-- Categories Section Begin -->
+<section class="categories">
+    <div class="container">
+
+        @Html.Action("CategoryShowImage")
+
+    </div>
+</section>
+<!-- Categories Section End -->
+<!-- Featured Section Begin -->
+<section class="featured spad">
+    <div class="container">
+        @Html.Action("ListCategoryShow")
+
+        <div class="row featured__filter">
+            @foreach (var item in ViewBag.ProductAllList)
+            {
+                var filterName = "c" + item.id_category;
+                <div class="col-lg-3 col-md-4 col-sm-6 mix @filterName">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="/Areas/Admin/Content/Photos/@item.mainPhoto">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="/ShopDetail/Index/@item.id_product"><i class="fa fa-info"></i></a></li>
+                                <li><a href="/ShopCart/AddItem?productId=@item.id_product&quantity=1"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="/ShopDetail/Index/@item.id_product">@item.name</a></h6>
+                            <h5>@item.salePrice đ</h5>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+    </div>
+</section>
+<!-- Featured Section End -->
+<!-- Latest Product Section Begin -->
+<section class="latest-product spad">
+    <div class="container">
+        <div class="row">
+
+            @Html.Action("LatestProducts")
+
+            @Html.Action("TopRatedProducts")
+
+            @Html.Action("TopViewProducts")
+
+        </div>
+    </div>
+</section>
+<!-- Latest Product Section End -->
+
+
+@section Scripts
+{
+    <script src="/Assets/Client/js/jquery-3.3.1.min.js"></script>
+    <script src="/Assets/Client/js/bootstrap.min.js"></script>
+    <script src="/Assets/Client/js/jquery.nice-select.min.js"></script>
+    <script src="/Assets/Client/js/jquery-ui.min.js"></script>
+    <script src="/Assets/Client/js/jquery.slicknav.js"></script>
+    <script src="/Assets/Client/js/mixitup.min.js"></script>
+    <script src="/Assets/Client/js/owl.carousel.min.js"></script>
+    <script src="/Assets/Client/js/main.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            $('.MenuHome').attr("class", "active");
+        }
+    </script>
+}

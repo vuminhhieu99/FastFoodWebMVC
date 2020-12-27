@@ -1,0 +1,168 @@
+﻿@model CnWeb_FastFood.Models.Checkout
+@{
+    ViewBag.Title = "AddBill";
+    Layout = "/Views/Shared/_MainLayout.cshtml";
+}
+@section Title{
+    FastFood| Thanh toán
+}
+@section Styles
+{
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="/Assets/Client/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/style.css" type="text/css">
+}
+
+<section class="hero hero-normal">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="hero__categories">
+                    <div class="hero__categories__all">
+                        <i class="fa fa-bars"></i>
+                        <span>Thể loại sản phẩm</span>
+                    </div>
+                    <ul>
+                        @Html.Action("CategoryShow", "Home")
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="hero__search">
+                    <div class="hero__search__form">
+                        <form action="#">
+                            <input type="text" placeholder="Nhập thông tin tìm kiếm ...">
+                            <button type="submit" class="site-btn">Tìm kiếm</button>
+                        </form>
+                    </div>
+                    <div class="hero__search__phone">
+                        <div class="hero__search__phone__icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="hero__search__phone__text">
+                            <h5>+84 65.888.888</h5>
+                            <span>Hỗ trợ 24/7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hero Section End -->
+<!-- Breadcrumb Section Begin -->
+<section class="breadcrumb-section set-bg" data-setbg="/Assets/Client/img/contactus.png">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb__text">
+                    <h2>Thanh toán đơn hàng</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Breadcrumb Section End -->
+<!-- Checkout Section Begin -->
+<section class="checkout spad">
+    <div class="container">
+        <div class="checkout__form">
+            <h4>Thông tin khách hàng</h4>
+            @*<form action="#">*@
+                <div class="row">
+                    <div class="col-lg-8 col-md-6">
+                        <div class="checkout__input">
+                            <p>Tên<span>*</span></p>
+                            <input type="text" placeholder="Street name" class="checkout__input__add" value="@ViewBag.customer.name" readonly data-id="@ViewBag.customer.id_customer" id="name">
+                        </div>
+                        <div class="checkout__input">
+                            <p>Địa chỉ<span>*</span></p>
+                            <input type="text" placeholder="Street Address" class="checkout__input__add" value="@ViewBag.customer.address" id="address">
+                        </div>
+                        <div class="checkout__input">
+                            <p>Số điện thoại<span>*</span></p>
+                            <input type="text" placeholder="Street Phone" class="checkout__input__add" value="@ViewBag.customer.phone" id="phone">
+                        </div>
+                       
+                        <div class="checkout__input__checkbox">
+                            <label for="thenReceive">
+                                Thanh toán khi nhận hàng
+                                <input type="radio" id="thenReceive" name="checkout">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </div>
+                        <div class="checkout__input__checkbox">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="withCredit">
+                                        Thanh toán qua thẻ ngân hàng
+                                        <input type="radio" id="withCredit" name="checkout">
+                                        <span class="checkmark"></span>
+
+                                    </label>
+                                </div>
+                                <div class="col-md-6 formCredit">
+                                    <div class="checkout__input">
+                                        @Html.DropDownList("Credit", (IEnumerable<SelectListItem>)ViewBag.CreditList, "  --  Chọn ngân hàng --  ")
+                                    </div>
+
+                                    <div class="checkout__input">
+                                        </br>
+                                        <div>Số tài khoản </div>
+                                        <input type="text" placeholder="số tài khoản" class="checkout__input__add" id="numberBankAccount">
+                                        <div>Tên chủ thẻ </div>
+                                        <input type="text" placeholder="tên chủ thẻ" class="checkout__input__add" id="nameBankAccount">
+                                        <button class="site-btn pull-right" >kiểm tra</button>
+                                    </div>                                   
+                                </div>
+                            </div>  
+                        </div>     
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="checkout__order">
+                            <h4>Đơn hàng của bạn</h4>
+                            <div class="checkout__order__products">Sản phẩm <span>Tổng tiền</span></div>
+                            <ul>
+                                @foreach (var line in Model.Item)
+                                {
+                                    <li>@line.Amount &nbsp;&nbsp;&nbsp; @line.Products.name<span>@line.IntoMoney</span></li>
+                                }
+                            </ul>
+                            <div class="checkout__order__subtotal">Tổng tiền gốc <span>@Model.Subtotal</span></div>
+                            <div class="checkout__order__products">Mã giảm giá: <span>@ViewBag.discount</span></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i> @Model.DiscountCode</i><span></span></div>
+                            <div>&nbsp;</div>
+                            <div class="checkout__order__total">Tổng cuối <span>@Model.Total đ</span></div>
+                            <button class="site-btn" id="pay">Thanh toán</button>
+                        </div>
+                        </div>
+                </div>
+            @*</form>*@
+        </div>
+    </div>
+</section>
+<!-- Checkout Section End -->
+
+@section Scripts
+{
+    <script src="/Assets/Client/js/jquery-3.3.1.min.js"></script>
+    <script src="/Assets/Client/js/bootstrap.min.js"></script>
+    <script src="/Assets/Client/js/jquery.nice-select.min.js"></script>
+    <script src="/Assets/Client/js/jquery-ui.min.js"></script>
+    <script src="/Assets/Client/js/jquery.slicknav.js"></script>
+    <script src="/Assets/Client/js/mixitup.min.js"></script>
+    <script src="/Assets/Client/js/owl.carousel.min.js"></script>
+    <script src="/Assets/Client/js/main.js"></script>
+    <script src="/Scripts/jquery.validate.unobtrusive.min.js"></script>    
+    <script type="text/javascript" src="/Assets/Client/Controller/JSshopCheckout.js"></script>
+}
+

@@ -1,0 +1,47 @@
+﻿@model CnWeb_FastFood.Models.EF.Category
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "/Areas/Admin/Views/Shared/_AdminlteLayout.cshtml";
+}
+
+@section Styles
+{
+
+}
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            Mã thể loại: 
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_category)
+        </dd>
+
+        <dt>
+            Tên thể loại:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+    </dl>
+</div>
+
+<button type="button" class="btn btn-warning">
+    <a class="fa fa-edit"></a> &nbsp;
+    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.id_category })
+</button>
+<button type="button" class="btn btn-warning">
+    <a class="fa fa-th-list"></a> &nbsp;
+    @Html.ActionLink("Danh sách", "Index")
+</button>
+
+
+@section Scripts
+{
+
+}

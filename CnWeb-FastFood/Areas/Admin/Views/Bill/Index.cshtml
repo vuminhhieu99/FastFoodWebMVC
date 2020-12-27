@@ -1,0 +1,521 @@
+﻿@model PagedList.IPagedList<CnWeb_FastFood.Models.BillView>
+@using PagedList.Mvc
+
+@{
+
+    ViewBag.Title = "Index";
+    Layout = "/Areas/Admin/Views/Shared/_AdminlteLayout.cshtml";
+}
+
+@section Styles
+{
+    <title>AdminLTE 3 | Category</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/fontawesome-free/css/all.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/dist/css/adminlte.min.css">
+
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/toastr/toastr.min.css">
+
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+    <!-- BS Stepper -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/bs-stepper/css/bs-stepper.min.css">
+
+    <!-- dropzonejs -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/dropzone/min/dropzone.min.css">
+    <style>
+        body {
+            padding-right: 0 !important
+        }
+    </style>
+}
+
+<!--Show detail Bill Modal -->
+<div class="modal fade" id="DetailBillModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            @using (Ajax.BeginForm("UpdateStatusBillJson", "Bill", new AjaxOptions { HttpMethod = "POST", OnComplete = "fnUpdateStatusSuccess", OnFailure = "fnpdateStatusFail" },
+     new { @name = "myDropzone", id = "UpdateStatusBill", @enctype = "multipart/form-data" }))
+            {
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Chi tiết hóa đơn</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        
+                        <div class="checkout__order">
+                            <input data-val="true" id="id_bill" name="id_bill" type="hidden">
+                            <div>
+                                <div class="dateBill checkout__order__subtotal"><span><i class="timeBill"></i></span> </div>
+                            </div>
+
+                            <div>Sản phẩm <span>Tổng tiền</span></div>
+                            <ul class="checkout__order__products">
+                            </ul>
+                            <div class="checkout__order__subtotal">Tổng tiền gốc <span class="subtotal"></span></div>
+                            <div class="checkout__order__discount">Mã giảm giá: <span class="discount"></span></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="discountCode"></i><span></span></div>
+                            <div>&nbsp;</div>
+                            <div class="checkout__order__total">Tổng cuối <span class="total"></span><span>đ</span></div>
+                            <p>Khách hàng: <span class="customer"></span></p>
+
+                            <p>Địa chỉ: <span class="address"></span></p>
+
+                            <p>SĐT: <span class="phone"></span></p>
+                        </div>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons" id="status">
+                            <label class="btn bg-olive btn-warning active">
+                                <input type="radio" name="id_status" id="option_b1" autocomplete="off" value="1"> Chờ xách nhận
+                            </label>
+                            <label class="btn bg-olive">
+                                <input type="radio" name="id_status" id="option_b2" autocomplete="off" value="2"> Chờ lấy hàng
+                            </label>
+                            <label class="btn bg-olive">
+                                <input type="radio" name="id_status" id="option_b3" autocomplete="off" value="3"> Đang giao
+                            </label>
+                            <label class="btn bg-olive">
+                                <input type="radio" name="id_status" id="option_b3" autocomplete="off" value="4"> Đã giao
+                            </label>
+                            <label class="btn bg-olive">
+                                <input type="radio" name="id_status" id="option_b3" autocomplete="off" value="5"> Đã hủy
+                            </label>
+                            <label class="btn bg-olive">
+                                <input type="radio" name="id_status" id="option_b3" autocomplete="off" value="6"> trả hàng
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <input type="submit" id="Submit" name="Submit" class="btn btn-primary" value="Lưu" />
+
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+<!-- /. Show detail Bill Modal -->
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <!-- card-header -->
+                    <div class="card-header">
+                        <!-- control content -->
+                        @using (Html.BeginForm("Index", "bill", FormMethod.Get, new { id = "form1" }))
+                        {
+                            <div class="row dataTables_wrapper">
+
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="dataTables_length" id="example1_length">
+                                        <label>
+                                            Show
+                                            @Html.DropDownList("PageSize", (IEnumerable<SelectListItem>)ViewBag.PageSize, new { @class = "custom-select custom-select-sm form-control form-control-sm" })
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div id="example1_filter" class="dataTables_filter">
+                                        <label>
+                                            Search:
+                                            <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="example1" name="searching" value="@ViewBag.SearchString">
+                                        </label>
+                                        <input type="submit" class="btn btn-block btn-warning btn-sm" value="Tìm kiếm" />
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        <!-- /.control content -->
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Mã đơn hàng</th>
+                                    <th>Tên khách hàng</th>
+                                    <th>Địa chỉ</th>
+                                    <th>Tổng tiền gốc (đ)</th>
+                                    <th>Mã giảm giá</th>
+                                    <th>Số tiền giảm (đ) </th>
+                                    <th>Tổng tiền cuối (đ) </th>
+                                    <th>Ngày tạo</th>
+                                    <th>Trạng thái</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr id="row_@item.id_bill" style="cursor: zoom-in">
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.id_bill)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.customerName)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.address)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.subtotal)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.discountCode)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.discount)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.total)
+                                        </td>
+                                        <td>
+                                            @Html.Raw(@Convert.ToDateTime(item.creatDate).ToString("dd/MM/yyyy"))
+                                        </td>
+                                        <td class="show__status">
+                                            @if (item.id_status == 1)
+                                            {
+                                                <span class="badge badge-warning">@Html.DisplayFor(modelItem => item.statusName)</span>
+                                            }
+                                            else if (item.id_status == 2)
+                                            {
+                                                <span class="badge badge-info">@Html.DisplayFor(modelItem => item.statusName)</span>
+                                            }
+                                            else if (item.id_status == 3)
+                                            {
+                                                <span class="badge badge-primary">@Html.DisplayFor(modelItem => item.statusName)</span>
+                                            }
+                                            else if (item.id_status == 4)
+                                            {
+                                                <span class="badge badge-success">@Html.DisplayFor(modelItem => item.statusName)</span>
+                                            }
+                                            else if (item.id_status == 5)
+                                            {
+                                                <span class="badge badge-secondary">@Html.DisplayFor(modelItem => item.statusName)</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge badge-dark">@Html.DisplayFor(modelItem => item.statusName)</span>
+                                            }
+                                        </td>
+
+                                        <td>
+                                            <i class="fa fa-trash"></i> &nbsp;
+                                            <a href="#" data-id="@item.id_bill">Delete</a>
+
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+                        <!-- phân trang -->
+                        <div class="row dataTables_wrapper">
+
+                            <div class="col-sm-12 col-md-6">
+                                <b style="color:navy">
+                                    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount &nbsp;&nbsp;-&nbsp;&nbsp;
+                                    @if (Model.Count == ViewBag.psize)
+                                    {
+                                        <span>Đang hiển thị (@(((Model.PageNumber * Model.Count) - Model.Count) + 1)-<span class="countItemofPage">@(Model.PageNumber * Model.Count)</span>) / <span class="countItem">@ViewBag.Count</span></span>
+                                    }
+                                    else
+                                    {
+                                        <span>Đang hiển thị (@((ViewBag.Count - Model.Count) + 1)-<span class="countItem">@ViewBag.Count</span>) / <span class="countItem">@ViewBag.Count</span></span>
+                                    }
+                                </b>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                @Html.PagedListPager(Model, page => Url.Action("Index", new { page, pageSize = ViewBag.psize, @searching = @ViewBag.SearchString }), new PagedListRenderOptions
+                           {
+
+                               ContainerDivClasses = new string[] { "dataTables_paginate", "paging_simple_numbers" },
+                               LiElementClasses = new string[] { "paginate_button", "page-item" }
+
+                           })
+                            </div>
+                        </div>
+
+                        <!-- /.phân trang -->
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+
+@section Scripts{
+    <script src="/Assets/Admin/LTE/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/Assets/Admin/LTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables -->
+    <script src="/Assets/Admin/LTE/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/Assets/Admin/LTE/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="/Assets/Admin/LTE/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="/Assets/Admin/LTE/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/Assets/Admin/LTE/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="/Assets/Admin/LTE/dist/js/demo.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="/Assets/Admin/LTE/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- Toastr -->
+    <script src="/Assets/Admin/LTE/plugins/toastr/toastr.min.js"></script>
+
+    <!-- Bootstrap Switch -->
+    <script src="/Assets/Admin/LTE/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <!-- BS-Stepper -->
+    <script src="/Assets/Admin/LTE/plugins/bs-stepper/js/bs-stepper.min.js"></script>
+
+    <!-- dropzonejs -->
+    <script src="/Assets/Admin/LTE/plugins/dropzone/min/dropzone.min.js"></script>
+
+    <script src="/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#example1").DataTable({
+                "paging": false,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": false,
+                "autoWidth": false,
+                "responsive": true,
+
+            });
+
+            // BS-Stepper Init
+            document.addEventListener('DOMContentLoaded', function () {
+                window.stepper = new Stepper(document.querySelector('.bs-stepper'))
+            });
+
+            // reset then open modal create Category
+            $('#bt_UpdateStatusBill').click(function () {
+                document.getElementById("UpdateStatusBill").reset();
+            });
+            //----------------//
+
+            // show detail Bill
+            $('tbody tr').click(function () {
+                $('#DetailBillModal').modal('show');
+                var arrange = $(this).find('td');
+                var id_bill = arrange[0].innerText;
+                $.ajax({
+                    url: "/Admin/Bill/Details",
+                    data: { id: id_bill },
+                    dataType: 'json',
+                    contentType: 'text',
+                    type: 'get'
+                }).done(function (data) {
+                    var bill = JSON.parse(data);
+                    $('#id_bill').val(bill.id_bill);
+                    $('.timeBill').text(bill.creatDate.toString());
+                    $.each(bill.BillDetails, function (index, item) {
+                        $('.checkout__order__products').append(`<li>${item.amount} &nbsp;&nbsp;&nbsp; ${item.Product.name}<span>${item.intoMoney}</span ></li >`);
+
+                    });
+                    $('.subtotal').text(bill.subtotal);
+                    $('.discount').text(bill.discount);
+                    $('.discountCode').text(bill.discountCode);
+                    $('.total').text(bill.total);
+                    $('.customer').text(bill.Customer.name);
+                    $('.address').text(bill.address);
+                    $('.phone').text(bill.phone);
+
+                    var strStatus = 'input[name="id_status"][value="' + bill.id_status + '"]';
+                    $(strStatus).trigger('click');
+                    //var list = $('input[name="id_status"]');
+                    ////$.each(list, function (index, item) {
+                    ////    console.log(item.checked);
+                    ////    console.log("\n");
+                    ////});
+                })
+            });
+
+            // reponse after UpdateStatusBill
+            function fnUpdateStatusSuccess(data) {
+                var res = JSON.parse(data.responseText);
+                if (res.status == true) {
+                    $('#DetailBillModal').modal('hide');
+                    toastr.success('Cập nhật thành công id : ' + res.id_customer);
+                    $('.show__status').empty();
+                    $('.show__status').append(`< span class="badge" >${res.nameStatusBill}</span >`)
+                    if (res.id_status == 1)
+                    {
+                        $('.badge').addClass('badge-warning');                       
+                    }
+                    else if (item.id_status == 2)
+                    {
+                        $('.badge').addClass('badge-info');               
+                       
+                    }
+                    else if (item.id_status == 3)
+                    {
+                        $('.badge').addClass('badge-primary');               
+                       
+                    }
+                    else if (item.id_status == 4)
+                    {
+                        $('.badge').addClass('badge-success');               
+                       
+                    }
+                    else if (item.id_status == 5)
+                    {
+                        $('.badge').addClass('badge-secondary');               
+                      
+                    }
+                    else
+                    {
+                        $('.badge').addClass('badge-dark');               
+                     
+                    }
+                }
+                else {
+                    $('.modal-body > .card-body').append("<p>! Không thể lưu. Vui lòng kiểm tra lại dữ liệu</p>");
+                }
+            };
+
+            // Ngăn tạo sự kiên show detail Bill từ thẻ mẹ tr khi nhấn delete
+            $('tbody a').click(function (event) {
+                event.stopPropagation();
+                if (!confirm("Bạn có chắc chắn muốn xóa?")) {
+                    return false;
+                }
+                var id_bill = $(this).data('id').toString();
+                $.ajax({
+                    url: "/Bill/Delete",
+                    data: { id: id_bill },
+                    dataType: 'json',
+                    contentType: 'text',
+                    type: 'get'
+                }).done(function (res) {
+                    if (res.status == true) {
+                        DelSuccess(id_bill);
+                    }
+                    else {
+                        alert("Lỗi! không thể xóa")
+                    }
+                });
+            });
+        });
+
+
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            //add class for slidebar
+            $('#bill').addClass('menu-open');
+            $('#bill>a').addClass('active');
+            $('#bill ul a').addClass('active');
+            //--------------//
+
+            //load data with change pagesize
+            $("#PageSize").change(function () {
+                $("#form1").submit();
+            });
+            //-------------//
+
+            // set class css for ỉtemPage- because pagelist not compatial boostrap 4 in this version of adminLTE
+            $('.pagination a').addClass('page-link');
+            //-------------//
+        });
+
+        // reponse after delete category
+        function DelSuccess(id_bill) {
+            var idTrs = "#row_" + id_bill;
+            $(idTrs).remove();
+            var countItem = $('.countItem').last().text();
+            countItem = Number(countItem) - 1;
+            $('.countItem').text(countItem);
+
+            var countItemofPage = $('.countItemofPage').first().text();
+            countItemofPage = Number(countItemofPage) - 1;
+            $('.countItemofPage').text(countItemofPage);
+
+            var Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 5000
+            });
+            Toast.fire({
+                icon: 'success',
+                title: ' complish delete witd id ' + id_bill
+            })
+        };
+                                            //---------------------//
+
+        // show detail Bill
+        $('tbody tr').click(function () {
+            $('#DetailBillModal').modal('show');
+            var arrange = $(this).find('td');
+            var id_bill = arrange[0].innerText;
+            $.ajax({
+                url: "/Admin/Bill/Details",
+                data: { id: id_bill },
+                dataType: 'json',
+                contentType: 'text',
+                type: 'get'
+            }).done(function (data) {
+                var bill = JSON.parse(data);
+                $('#id_bill').val(bill.id_bill);
+                $('.timeBill').text(bill.creatDate.toString());
+                $.each(bill.BillDetails, function (index, item) {
+                    $('.checkout__order__products').append(`<li>${item.amount} &nbsp;&nbsp;&nbsp; ${item.Product.name}<span>${item.intoMoney}</span ></li >`);
+
+                });
+                $('.subtotal').text(bill.subtotal);
+                $('.discount').text(bill.discount);
+                $('.discountCode').text(bill.discountCode);
+                $('.total').text(bill.total);
+                $('.customer').text(bill.Customer.name);
+                $('.address').text(bill.address);
+                $('.phone').text(bill.phone);
+
+                var strStatus = 'input[name="id_status"][value="' + bill.id_status + '"]';
+                $(strStatus).trigger('click');
+                //var list = $('input[name="id_status"]');
+                ////$.each(list, function (index, item) {
+                ////    console.log(item.checked);
+                ////    console.log("\n");
+                ////});
+            })
+        });
+
+        // reponse after UpdateStatusBill
+        function fnUpdateStatusSuccess(data) {
+            var res = JSON.parse(data.responseText);
+            if (res.status == true) {
+                $('#DetailBillModal').modal('hide');
+                toastr.success('Cập nhật thành công id : ' + res.id_customer);
+                setTimeout(function () {
+                    window.location.reload();
+                }, 2000);
+            }
+                
+        };
+    </script>
+}

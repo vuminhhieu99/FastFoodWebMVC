@@ -1,0 +1,166 @@
+﻿@model IEnumerable<CnWeb_FastFood.Models.ProductView>
+@{
+    /**/
+
+    ViewBag.Title = "Index";
+    Layout = "/Views/Shared/_MainLayout.cshtml";
+}
+@section Title{
+    FastFood | Liên hệ
+}
+@section Styles
+{
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Assets/Client/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="/Assets/Client/css/style.css" type="text/css">
+
+}
+<section class="hero hero-normal ">
+    <div class="container ">
+        <div class="row ">
+            <div class="col-lg-3 ">
+                <div class="hero__categories ">
+                    <div class="hero__categories__all ">
+                        <i class="fa fa-bars "></i>
+                        <span>Thể loại sản phẩm</span>
+                    </div>
+                    <ul>
+                        @Html.Action("CategoryShow", "Home")
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9 ">
+                <div class="hero__search ">
+                    <div class="hero__search__form ">
+                        <form action="# ">
+                            <input type="text" placeholder="Nhập thông tin tìm kiếm ... ">
+                            <button type="submit" class="site-btn ">Tìm kiếm</button>
+                        </form>
+                    </div>
+                    <div class="hero__search__phone ">
+                        <div class="hero__search__phone__icon ">
+                            <i class="fa fa-phone "></i>
+                        </div>
+                        <div class="hero__search__phone__text ">
+                            <h5>+84 65.888.888</h5>
+                            <span>Hỗ trợ 24/7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hero Section End -->
+<!-- Breadcrumb Section Begin -->
+<section class="breadcrumb-section set-bg " data-setbg="/Assets/Client/img/contactus.png">
+    <div class="container ">
+        <div class="row ">
+            <div class="col-lg-12 text-center ">
+                <div class="breadcrumb__text ">
+                    <h2>Liên hệ với FastFood</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Breadcrumb Section End -->
+<!-- Contact Section Begin -->
+<section class="contact spad ">
+    <div class="container ">
+        <div class="row ">
+            <div class="col-lg-3 col-md-3 col-sm-6 text-center ">
+                <div class="contact__widget ">
+                    <span class="icon_phone "></span>
+                    <h4>Điện thoại</h4>
+                    <p>+84 65.888.888</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 text-center ">
+                <div class="contact__widget ">
+                    <span class="icon_pin_alt "></span>
+                    <h4>Địa chỉ</h4>
+                    <p>236 Hoàng Quốc Việt,Bắc Từ Liêm,HN</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 text-center ">
+                <div class="contact__widget ">
+                    <span class="icon_clock_alt "></span>
+                    <h4>Giờ mở cửa</h4>
+                    <p>07:00 - 23:00</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 text-center ">
+                <div class="contact__widget ">
+                    <span class="icon_mail_alt "></span>
+                    <h4>Email</h4>
+                    <p>fastfoodhh@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section End -->
+<!-- Map Begin -->
+<div class="map ">
+    <div id="map" width="600 " height="450" style="border:0;  aria-hidden="false " tabindex="0 "></div>
+    
+</div>
+<!-- Map End -->
+@section Scripts{
+    <script src="/Assets/Client/js/jquery-3.3.1.min.js"></script>
+    <script src="/Assets/Client/js/bootstrap.min.js"></script>
+    <script src="/Assets/Client/js/jquery.nice-select.min.js"></script>
+    <script src="/Assets/Client/js/jquery-ui.min.js"></script>
+    <script src="/Assets/Client/js/jquery.slicknav.js"></script>
+    <script src="/Assets/Client/js/mixitup.min.js"></script>
+    <script src="/Assets/Client/js/owl.carousel.min.js"></script>
+    <script src="/Assets/Client/js/main.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            $('.MenuContact').attr("class", "active");
+        }
+    </script>
+
+    <script  async="false" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdAO0PEgWAi5nbwZclmBqmITIaprVrPPA&callback=initMap&libraries=&v=weekly"></script>
+    <script>
+        // This example displays a marker at the center of Australia.
+        // When the user clicks the marker, an info window opens.
+        function initMap() {
+            const mta = { lat: 21.047283, lng: 105.786337 }; //tọa độ
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: mta,
+            });
+            const contentString =
+                `<div class="map-inside " >
+                    <i class="icon_pin "></i>
+                    <div class="inside-widget ">
+                        <h4>Hà Nội</h4>
+                        <ul>
+                            <li>Điện thoại: +84 65.888.888</li>
+                            <li>Địa chỉ: 236 Hoàng Quốc Việt, Bắc Từ Liêm, Hà Nội</li>
+                        </ul>
+                    </div>
+                </div >`;
+            const infowindow = new google.maps.InfoWindow({
+                content: contentString,
+            });
+            const marker = new google.maps.Marker({
+                position: mta,
+                map,
+                title: "Uluru (Ayers Rock)",
+            });
+            marker.addListener("click", () => {
+                infowindow.open(map, marker);
+            });
+        }
+        //google.maps.event.addDomListener(window, 'load', initMap);
+    </script>
+}

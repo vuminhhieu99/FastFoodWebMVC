@@ -1,0 +1,42 @@
+﻿@model CnWeb_FastFood.Models.EF.DiscountCode
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@section header
+{
+    Mã giảm giá - Thông tin mã giảm giá (#@Model.id_discountCode)
+}
+
+
+<dl class="dl-horizontal">
+    <dt>
+        Mã giảm giá:
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.id_discountCode)
+    </dd>
+
+    <dt>
+        Số tiền giảm giá:
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.discount) &nbsp; đ 
+    </dd>
+
+</dl>
+
+<br />
+
+<button type="button" class="btn btn-warning btn-admin">
+    <a class="fa fa-edit"></a> &nbsp;
+    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.id_discountCode })
+</button>
+<button type="button" class="btn btn-warning btn-admin">
+    <a class="fa fa-th-list"></a> &nbsp;
+    @Html.ActionLink("Danh sách", "Index")
+</button>

@@ -1,0 +1,3964 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\ServerWeb\FastFood</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Areas/Admin/Content/Photos/combo/c1.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/combo/c10.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/combo/c11.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/combo/c12.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/combo/c13.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/combo/c14.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/combo/c15.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/combo/c2.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/combo/c3.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/combo/c4.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/combo/c5.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/combo/c6.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/combo/c7.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/combo/c8.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/combo/c9.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/logo/favicon-png.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/logo/favicon.ico">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/logo/logo.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/others/1.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/others/10.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/others/2.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/others/3.jfif">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/others/4.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/others/5.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/others/6.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/others/7.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/others/8.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/others/9.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s1.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s10.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s11.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s12.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s13.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s14.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s15.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s16.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s17.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s18.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s19.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s2.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s20.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s21.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s22.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s23.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s24.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s25.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s26.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s27.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s28.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s29.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s3.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s30.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s31.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s32.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s33.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s34.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s35.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s36.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s37.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s38.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s39.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s4.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s40.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s41.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s42.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s43.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s44.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s45.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s46.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s47.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s48.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s49.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s5.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s50.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s51.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s52.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s53.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s54.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s55.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s56.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s57.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s58.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s59.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s6.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s60.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s61.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s7.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s8.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/single/s9.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/special/sp1.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/special/sp10.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/special/sp11.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/special/sp12.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/special/sp13.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/special/sp14.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/special/sp15.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/special/sp16.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/special/sp17.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/special/sp18.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/special/sp2.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/special/sp3.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/special/sp4.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/special/sp5.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/special/sp6.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/special/sp7.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/special/sp8.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/Photos/special/sp9.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/js/ProductsController.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Bill/Create.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Bill/Delete.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Bill/Details.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Bill/Edit.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Bill/Filter.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Bill/Index.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Bill/Index2.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Bill/IndexBillDetail.cshtml">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/BillDetails/Create.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/BillDetails/Delete.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/BillDetails/Details.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/BillDetails/Edit.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Category/Create.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Category/Details.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Category/Edit.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Category/Index.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Customer/Create.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Customer/Details.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Customer/Edit.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Customer/Filter.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Customer/Index.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Customer/Index2.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Dashboard/Index.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/DiscountCode/Create.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/DiscountCode/Details.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/DiscountCode/Edit.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/DiscountCode/Index.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Login/Index.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Product/Create.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Product/Details.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Product/Edit.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Product/Filter.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Product/Index.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Product/Index2.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Shared/_AdminLayout.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Shared/_AdminlteControlSidebar.cshtml">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Shared/_AdminlteFooter.cshtml">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Shared/_AdminlteMainHeader.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Shared/_AdminlteMainSidebar.cshtml">
+      <publishTime>07/19/2020 16:30:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/web.config">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Areas/Client/Views/web.config">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/Images/background.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/Images/big logo.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/Images/logo.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/bootstrap/css/bootstrap.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/bootstrap/css/bootstrap.css.map">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/bootstrap/css/bootstrap.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/bootstrap/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/bootstrap/js/bootstrap.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/bootstrap/js/bootstrap.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/bootstrap/js/npm.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/alerts.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/background-variant.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/border-radius.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/buttons.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/center-block.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/clearfix.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/forms.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/gradients.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/grid-framework.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/grid.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/hide-text.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/image.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/labels.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/list-group.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/nav-divider.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/nav-vertical-align.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/opacity.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/pagination.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/panels.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/progress-bar.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/reset-filter.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/resize.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/responsive-visibility.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/size.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/tab-focus.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/table-row.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/text-emphasis.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/text-overflow.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/mixins/vendor-prefixes.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/bootstrap-less/variables.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/404_500_errors.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/AdminLTE.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/alerts.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/bootstrap-social.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/boxes.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/buttons.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/callout.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/carousel.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/control-sidebar.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/core.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/direct-chat.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/dropdown.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/forms.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/fullcalendar.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/header.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/info-box.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/invoice.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/labels.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/lockscreen.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/login_and_register.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/mailbox.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/miscellaneous.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/mixins.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/modal.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/navs.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/print.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/products.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/progress-bars.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/select2.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/sidebar-mini.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/sidebar.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/skins/skin-black-light.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/skins/skin-black.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/skins/skin-blue-light.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/skins/skin-blue.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/skins/skin-green-light.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/skins/skin-green.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/skins/skin-purple-light.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/skins/skin-purple.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/skins/skin-red-light.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/skins/skin-red.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/skins/skin-yellow-light.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/skins/skin-yellow.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/skins/_all-skins.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/small-box.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/table.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/timeline.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/users-list.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/build/less/variables.less">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/AdminLTE.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/AdminLTE.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-black-light.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-black-light.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-black.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-black.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-blue-light.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-blue-light.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-blue.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-blue.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-green-light.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-green-light.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-green.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-green.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-purple-light.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-purple-light.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-purple.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-purple.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-red-light.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-red-light.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-red.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-red.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-yellow-light.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-yellow-light.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-yellow.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/skin-yellow.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/_all-skins.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/css/skins/_all-skins.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/avatar.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/avatar04.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/avatar2.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/avatar3.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/avatar5.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/boxed-bg.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/boxed-bg.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/credit/american-express.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/credit/cirrus.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/credit/mastercard.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/credit/mestro.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/credit/paypal.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/credit/paypal2.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/credit/Thumbs.db">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/credit/visa.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/default-50x50.gif">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/icons.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/photo1.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/photo2.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/Thumbs.db">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/user1-128x128.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/user2-160x160.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/user3-128x128.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/user4-128x128.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/user5-128x128.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/user6-128x128.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/user7-128x128.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/img/user8-128x128.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/js/app.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/js/app.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/js/demo.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/js/pages/dashboard.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/dist/js/pages/dashboard2.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/documentation/build/include/adminlte-options.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/documentation/build/include/advice.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/documentation/build/include/browsers.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/documentation/build/include/components.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/documentation/build/include/dependencies.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/documentation/build/include/download.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/documentation/build/include/faq.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/documentation/build/include/implementations.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/documentation/build/include/introduction.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/documentation/build/include/layout.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/documentation/build/include/license.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/documentation/build/include/plugins.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/documentation/build/include/upgrade.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/documentation/build/index.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/documentation/docs.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/documentation/index.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/documentation/style.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/Gruntfile.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/bootstrap-slider/bootstrap-slider.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/bootstrap-slider/slider.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/chartjs/Chart.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/chartjs/Chart.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/adapters/jquery.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/build-config.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/CHANGES.md">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/ckeditor.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/config.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/contents.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/af.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/ar.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/bg.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/bn.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/bs.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/ca.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/cs.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/cy.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/da.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/de.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/el.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/en-au.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/en-ca.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/en-gb.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/en.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/eo.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/es.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/et.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/eu.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/fa.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/fi.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/fo.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/fr-ca.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/fr.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/gl.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/gu.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/he.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/hi.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/hr.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/hu.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/id.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/is.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/it.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/ja.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/ka.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/km.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/ko.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/ku.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/lt.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/lv.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/mk.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/mn.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/ms.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/nb.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/nl.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/no.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/pl.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/pt-br.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/pt.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/ro.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/ru.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/si.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/sk.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/sl.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/sq.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/sr-latn.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/sr.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/sv.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/th.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/tr.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/ug.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/uk.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/vi.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/zh-cn.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/lang/zh.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/LICENSE.md">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/da.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/de.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/el.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/es.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/et.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/he.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/id.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/it.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/km.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/no.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/si.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/th.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/about/dialogs/about.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/about/dialogs/logo_ckeditor.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/clipboard/dialogs/paste.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/dialog/dialogDefinition.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/fakeobjects/images/spacer.gif">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/icons.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/icons_hidpi.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/image/dialogs/image.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/image/images/noimage.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/link/dialogs/anchor.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/link/dialogs/link.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/link/images/anchor.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/link/images/hidpi/anchor.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/magicline/images/hidpi/icon.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/magicline/images/icon.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/pastefromword/filter/default.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/scayt/dialogs/options.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/scayt/dialogs/toolbar.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/scayt/LICENSE.md">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/scayt/README.md">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/ar.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/bg.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/ca.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/cs.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/cy.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/de.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/el.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/en.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/eo.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/es.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/et.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/fa.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/fi.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/fr.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/gl.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/he.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/hr.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/hu.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/id.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/it.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/ja.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/km.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/ku.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/lv.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/nb.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/nl.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/no.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/pl.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/ru.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/si.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/sk.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/sl.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/sq.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/sv.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/th.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/tr.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/ug.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/uk.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/vi.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/specialchar/dialogs/specialchar.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/table/dialogs/table.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/tabletools/dialogs/tableCell.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/wsc/dialogs/tmp.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/wsc/dialogs/wsc.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/wsc/dialogs/wsc.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/wsc/dialogs/wsc_ie.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/wsc/LICENSE.md">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/plugins/wsc/README.md">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/README.md">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/dialog.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/dialog_ie.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/dialog_ie7.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/dialog_ie8.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/dialog_iequirks.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/dialog_opera.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/editor.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/editor_gecko.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/editor_ie.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/editor_ie7.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/editor_ie8.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/editor_iequirks.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/icons.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/icons_hidpi.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/images/arrow.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/images/close.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/images/hidpi/close.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/images/hidpi/lock-open.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/images/hidpi/lock.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/images/hidpi/refresh.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/images/lock-open.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/images/lock.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/images/refresh.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/skins/moono/readme.md">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ckeditor/styles.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/colorpicker/bootstrap-colorpicker.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/colorpicker/bootstrap-colorpicker.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/colorpicker/bootstrap-colorpicker.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/colorpicker/bootstrap-colorpicker.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/colorpicker/img/alpha-horizontal.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/colorpicker/img/alpha.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/colorpicker/img/hue-horizontal.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/colorpicker/img/hue.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/colorpicker/img/saturation.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/dataTables.bootstrap.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/dataTables.bootstrap.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/dataTables.bootstrap.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/AutoFill/css/dataTables.autoFill.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/AutoFill/css/dataTables.autoFill.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/AutoFill/examples/columns.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/AutoFill/examples/complete-callback.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/AutoFill/examples/fill-both.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/AutoFill/examples/fill-horizontal.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/AutoFill/examples/index.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/AutoFill/examples/scrolling.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/AutoFill/examples/simple.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/AutoFill/examples/step-callback.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/AutoFill/images/filler.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/AutoFill/js/dataTables.autoFill.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/AutoFill/js/dataTables.autoFill.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/AutoFill/Readme.txt">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/examples/alt_insert.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/examples/colvis.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/examples/col_filter.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/examples/fixedcolumns.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/examples/fixedheader.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/examples/index.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/examples/jqueryui.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/examples/new_init.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/examples/predefined.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/examples/realtime.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/examples/reset.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/examples/scrolling.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/examples/server_side.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/examples/simple.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/examples/state_save.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/images/insert.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/License.txt">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColReorder/Readme.md">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/css/dataTables.colVis.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/css/dataTables.colvis.jqueryui.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/css/dataTables.colVis.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/examples/button_order.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/examples/exclude_columns.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/examples/group_columns.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/examples/index.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/examples/jqueryui.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/examples/mouseover.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/examples/new_init.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/examples/restore.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/examples/simple.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/examples/text.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/examples/title_callback.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/examples/two_tables.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/examples/two_tables_identical.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/js/dataTables.colVis.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/js/dataTables.colVis.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/License.txt">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/ColVis/Readme.md">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/css/dataTables.fixedColumns.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/css/dataTables.fixedColumns.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/examples/bootstrap.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/examples/colvis.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/examples/col_filter.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/examples/css_size.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/examples/index.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/examples/index_column.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/examples/left_right_columns.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/examples/right_column.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/examples/rowspan.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/examples/server-side-processing.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/examples/simple.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/examples/size_fixed.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/examples/size_fluid.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/examples/two_columns.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/License.txt">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedColumns/Readme.md">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedHeader/css/dataTables.fixedHeader.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedHeader/css/dataTables.fixedHeader.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedHeader/examples/header_footer.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedHeader/examples/index.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedHeader/examples/simple.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedHeader/examples/top_left_right.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedHeader/examples/two_tables.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedHeader/examples/zIndexes.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/FixedHeader/Readme.txt">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/KeyTable/css/dataTables.keyTable.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/KeyTable/css/dataTables.keyTable.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/KeyTable/examples/events.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/KeyTable/examples/html.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/KeyTable/examples/index.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/KeyTable/examples/scrolling.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/KeyTable/examples/simple.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/KeyTable/Readme.txt">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/css/dataTables.responsive.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/css/dataTables.responsive.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/child-rows/column-control.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/child-rows/custom-renderer.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/child-rows/disable-child-rows.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/child-rows/index.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/child-rows/right-column.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/child-rows/whole-row-control.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/display-control/auto.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/display-control/classes.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/display-control/complexHeader.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/display-control/fixedHeader.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/display-control/index.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/display-control/init-classes.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/index.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/initialisation/ajax.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/initialisation/className.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/initialisation/default.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/initialisation/index.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/initialisation/new.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/initialisation/option.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/styling/bootstrap.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/styling/compact.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/styling/foundation.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/styling/index.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/examples/styling/scrolling.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/js/dataTables.responsive.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/License.txt">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Responsive/Readme.md">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Scroller/css/dataTables.scroller.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Scroller/css/dataTables.scroller.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Scroller/examples/api_scrolling.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Scroller/examples/data/2500.txt">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Scroller/examples/data/ssp.php">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Scroller/examples/index.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Scroller/examples/large_js_source.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Scroller/examples/server-side_processing.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Scroller/examples/simple.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Scroller/examples/state_saving.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Scroller/images/loading-background.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Scroller/js/dataTables.scroller.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Scroller/js/dataTables.scroller.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/Scroller/Readme.txt">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/css/dataTables.tableTools.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/css/dataTables.tableTools.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/examples/ajax.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/examples/alter_buttons.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/examples/bootstrap.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/examples/button_text.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/examples/collection.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/examples/defaults.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/examples/index.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/examples/jqueryui.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/examples/multiple_tables.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/examples/multi_instance.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/examples/new_init.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/examples/pdf_message.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/examples/plug-in.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/examples/select_column.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/examples/select_multi.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/examples/select_os.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/examples/select_single.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/examples/simple.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/examples/swf_path.html">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/images/collection.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/images/collection_hover.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/images/copy.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/images/copy_hover.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/images/csv.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/images/csv_hover.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/images/pdf.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/images/pdf_hover.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/images/print.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/images/print_hover.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/images/psd/collection.psd">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/images/psd/copy document.psd">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/images/psd/file_types.psd">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/images/psd/printer.psd">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/images/xls.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/images/xls_hover.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/Readme.md">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/swf/copy_csv_xls.swf">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/images/sort_asc.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/images/sort_asc_disabled.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/images/sort_both.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/images/sort_desc.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/images/sort_desc_disabled.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/jquery.dataTables.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/jquery.dataTables.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/jquery.dataTables.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/jquery.dataTables.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datatables/jquery.dataTables_themeroller.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/bootstrap-datepicker.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/datepicker3.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.ar.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.az.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.bg.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.ca.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.cs.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.cy.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.da.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.de.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.el.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.es.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.et.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.fa.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.fi.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.fr.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.gl.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.he.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.hr.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.hu.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.id.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.is.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.it.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.ja.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.ka.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.kk.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.kr.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.lt.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.lv.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.mk.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.ms.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.nb.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.nl-BE.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.nl.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.no.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.pl.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.pt-BR.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.pt.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.ro.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.rs-latin.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.rs.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.ru.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.sk.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.sl.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.sq.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.sv.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.sw.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.th.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.tr.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.ua.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.vi.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/datepicker/locales/bootstrap-datepicker.zh-TW.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/daterangepicker/daterangepicker-bs3.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/daterangepicker/daterangepicker.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/daterangepicker/moment.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/daterangepicker/moment.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/fastclick/fastclick.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/fastclick/fastclick.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/excanvas.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/excanvas.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.colorhelpers.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.colorhelpers.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.canvas.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.canvas.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.categories.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.categories.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.crosshair.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.crosshair.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.errorbars.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.errorbars.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.fillbetween.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.fillbetween.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.image.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.image.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.navigate.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.navigate.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.pie.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.pie.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.resize.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.resize.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.selection.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.selection.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.stack.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.stack.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.symbol.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.symbol.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.threshold.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.threshold.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.time.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/flot/jquery.flot.time.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/fullcalendar/fullcalendar.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/fullcalendar/fullcalendar.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/fullcalendar/fullcalendar.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/fullcalendar/fullcalendar.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/fullcalendar/fullcalendar.print.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/all.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/aero%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/aero.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/aero.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/blue%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/blue.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/blue.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/flat%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/flat.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/flat.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/green%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/green.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/green.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/grey%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/grey.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/grey.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/orange%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/orange.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/orange.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/pink%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/pink.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/pink.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/purple%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/purple.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/purple.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/red%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/red.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/red.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/yellow%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/yellow.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/yellow.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/flat/_all.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/futurico/futurico%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/futurico/futurico.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/futurico/futurico.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/icheck.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/icheck.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/line/aero.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/line/blue.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/line/green.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/line/grey.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/line/line%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/line/line.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/line/line.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/line/orange.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/line/pink.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/line/purple.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/line/red.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/line/yellow.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/line/_all.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/aero%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/aero.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/aero.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/blue%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/blue.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/blue.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/green%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/green.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/green.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/grey%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/grey.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/grey.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/minimal%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/minimal.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/minimal.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/orange%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/orange.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/orange.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/pink%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/pink.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/pink.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/purple%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/purple.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/purple.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/red%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/red.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/red.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/yellow%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/yellow.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/yellow.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/minimal/_all.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/polaris/polaris%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/polaris/polaris.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/polaris/polaris.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/aero%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/aero.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/aero.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/blue%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/blue.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/blue.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/green%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/green.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/green.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/grey%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/grey.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/grey.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/orange%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/orange.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/orange.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/pink%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/pink.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/pink.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/purple%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/purple.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/purple.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/red%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/red.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/red.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/square%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/square.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/square.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/yellow%402x.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/yellow.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/yellow.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/iCheck/square/_all.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/input-mask/jquery.inputmask.date.extensions.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/input-mask/jquery.inputmask.extensions.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/input-mask/jquery.inputmask.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/input-mask/jquery.inputmask.numeric.extensions.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/input-mask/jquery.inputmask.phone.extensions.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/input-mask/jquery.inputmask.regex.extensions.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/input-mask/phone-codes/phone-be.json">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/input-mask/phone-codes/phone-codes.json">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/input-mask/phone-codes/readme.txt">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ionslider/img/sprite-skin-flat.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ionslider/img/sprite-skin-nice.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ionslider/ion.rangeSlider.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ionslider/ion.rangeSlider.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ionslider/ion.rangeSlider.skinFlat.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/ionslider/ion.rangeSlider.skinNice.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/jQuery/jQuery-2.1.4.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/jQueryUI/jquery-ui.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/jQueryUI/jquery-ui.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/jvectormap/jquery-jvectormap-world-mill-en.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/knob/jquery.knob.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/morris/morris.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/morris/morris.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/morris/morris.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/pace/pace.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/az.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/bg.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/ca.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/cs.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/da.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/de.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/en.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/es.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/et.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/eu.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/fa.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/fi.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/fr.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/gl.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/he.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/hi.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/hr.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/hu.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/id.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/is.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/it.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/ko.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/lt.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/lv.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/mk.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/nb.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/nl.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/pl.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/pt-BR.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/pt.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/ro.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/ru.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/sk.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/sr.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/sv.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/th.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/tr.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/uk.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/vi.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/zh-CN.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/i18n/zh-TW.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/select2.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/select2.full.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/select2.full.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/select2.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/select2.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/select2/select2.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/slimScroll/jquery.slimscroll.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/slimScroll/jquery.slimscroll.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/sparkline/jquery.sparkline.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/sparkline/jquery.sparkline.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/timepicker/bootstrap-timepicker.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/timepicker/bootstrap-timepicker.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/timepicker/bootstrap-timepicker.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/LTE/plugins/timepicker/bootstrap-timepicker.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Admin/otherAssets/style.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/Controller/JSshopCart.js">
+      <publishTime>07/20/2020 17:39:42</publishTime>
+    </File>
+    <File Include="Assets/Client/Controller/JSshopCheckout.js">
+      <publishTime>07/20/2020 15:34:05</publishTime>
+    </File>
+    <File Include="Assets/Client/Controller/ShopDetailController.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/css/bootstrap.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/css/elegant-icons.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/css/font-awesome.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/css/jquery-ui.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/css/nice-select.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/css/owl.carousel.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/css/slicknav.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/css/style.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/fonts/ElegantIcons.eot">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/fonts/ElegantIcons.svg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/fonts/ElegantIcons.ttf">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/fonts/ElegantIcons.woff">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/fonts/fontawesome-webfont.eot">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/fonts/fontawesome-webfont.svg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/fonts/fontawesome-webfont.ttf">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/fonts/fontawesome-webfont.woff">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/fonts/fontawesome-webfont.woff2">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/fonts/FontAwesome.otf">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/banner/banner-1.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/banner/banner-2.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/big logo.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/blog/blog-1.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/blog/blog-2.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/blog/blog-3.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/blog/blog-4.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/blog/blog-5.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/blog/blog-6.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/blog/details/details-author.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/blog/details/details-hero.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/blog/details/details-pic.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/blog/sidebar/sr-1.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/blog/sidebar/sr-2.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/blog/sidebar/sr-3.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/breadcrumb.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/cart/cart-1.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/cart/cart-2.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/cart/cart-3.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/categories/cat-1.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/categories/cat-2.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/categories/cat-3.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/categories/cat-4.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/categories/cat-5.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/contactus.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/featured/feature-1.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/featured/feature-2.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/featured/feature-3.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/featured/feature-4.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/featured/feature-5.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/featured/feature-6.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/featured/feature-7.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/featured/feature-8.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/hero/banner.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/hero/banner.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/hero/banner2.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/language.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/latest-product/lp-1.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/latest-product/lp-2.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/latest-product/lp-3.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/logo.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/payment-item.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/payment.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/details/product-details-1.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/details/product-details-2.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/details/product-details-3.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/details/product-details-4.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/details/product-details-5.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/details/thumb-1.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/details/thumb-2.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/details/thumb-3.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/details/thumb-4.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/discount/pd-1.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/discount/pd-2.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/discount/pd-3.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/discount/pd-4.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/discount/pd-5.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/discount/pd-6.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/product-1.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/product-10.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/product-11.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/product-12.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/product-2.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/product-3.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/product-4.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/product-5.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/product-6.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/product-7.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/product-8.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/product/product-9.jpg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/img/ship.png">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/js/baseController.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/js/bootstrap.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/js/jquery-3.3.1.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/js/jquery-ui.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/js/jquery.nice-select.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/js/jquery.slicknav.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/js/main.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/js/mixitup.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/js/owl.carousel.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/sass/style.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/sass/_base.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/sass/_blog-details.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/sass/_blog-sidebar.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/sass/_blog.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/sass/_breadcrumb.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/sass/_checkout.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/sass/_contact.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/sass/_footer.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/sass/_header.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/sass/_hero.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/sass/_home-page.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/sass/_mixins.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/sass/_responsive.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/sass/_shop-details.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/sass/_shop-grid.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/sass/_shoping-cart.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/sass/_sidebar.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/sass/_variable.scss">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/Source/bootstrap-4.4.1-dist.zip">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/Source/font-awesome-4.7.0.zip">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/Source/jquery-nice-select-1.1.0.zip">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/Source/jquery-ui-1.12.1.zip">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/Source/OwlCarousel2-2.3.4.zip">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/Source/sass.zip">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Assets/Client/Source/SlickNav-master.zip">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/CnWeb-FastFood.dll">
+      <publishTime>07/21/2020 16:22:14</publishTime>
+    </File>
+    <File Include="bin/CnWeb-FastFood.pdb">
+      <publishTime>07/21/2020 16:22:14</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/PagedList.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/PagedList.Mvc.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Content/PagedList.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.map">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.map">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Views/Contact/Index.cshtml">
+      <publishTime>07/19/2020 16:30:47</publishTime>
+    </File>
+    <File Include="Views/CustomerBill/Index.cshtml">
+      <publishTime>07/19/2020 16:30:47</publishTime>
+    </File>
+    <File Include="Views/CustomerLogin/Index.cshtml">
+      <publishTime>07/19/2020 16:30:47</publishTime>
+    </File>
+    <File Include="Views/Home/CategoryShow.cshtml">
+      <publishTime>07/19/2020 16:17:08</publishTime>
+    </File>
+    <File Include="Views/Home/CategoryShowImage.cshtml">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>07/19/2020 16:30:47</publishTime>
+    </File>
+    <File Include="Views/Home/LatestProducts.cshtml">
+      <publishTime>07/19/2020 16:30:47</publishTime>
+    </File>
+    <File Include="Views/Home/ListCategoryShow.cshtml">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Views/Home/ProductFilterShow.cshtml">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Views/Home/ProductSearchShow.cshtml">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Views/Home/ReviewProducts.cshtml">
+      <publishTime>07/19/2020 17:27:01</publishTime>
+    </File>
+    <File Include="Views/Home/TopRatedProducts.cshtml">
+      <publishTime>07/19/2020 16:30:47</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Views/Shared/_BeginContentLayoutHome.cshtml">
+      <publishTime>07/19/2020 17:27:01</publishTime>
+    </File>
+    <File Include="Views/Shared/_BeginContentLayoutOtherHome.cshtml">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Views/Shared/_MainLayout.cshtml">
+      <publishTime>07/20/2020 15:40:24</publishTime>
+    </File>
+    <File Include="Views/Shared/_MainLayoutFooter.cshtml">
+      <publishTime>07/19/2020 17:27:01</publishTime>
+    </File>
+    <File Include="Views/Shared/_MainLayoutHeader.cshtml">
+      <publishTime>07/19/2020 16:30:47</publishTime>
+    </File>
+    <File Include="Views/Shop/Index.cshtml">
+      <publishTime>07/19/2020 17:27:01</publishTime>
+    </File>
+    <File Include="Views/Shop/LatestProducts.cshtml">
+      <publishTime>07/19/2020 16:30:47</publishTime>
+    </File>
+    <File Include="Views/Shop/ListCategoryShow.cshtml">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Views/Shop/ListPriceShow.cshtml">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Views/Shop/ProductFilterShow.cshtml">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Views/Shop/SaleOff.cshtml">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Views/ShopCart/HeaderCart.cshtml">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Views/ShopCart/Index.cshtml">
+      <publishTime>07/20/2020 17:28:31</publishTime>
+    </File>
+    <File Include="Views/ShopCheckout/Index.cshtml">
+      <publishTime>07/20/2020 18:02:19</publishTime>
+    </File>
+    <File Include="Views/ShopDetail/Index.cshtml">
+      <publishTime>07/20/2020 16:56:09</publishTime>
+    </File>
+    <File Include="Views/ShopDetail/RelatedProduct.cshtml">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>07/05/2020 06:17:20</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>07/19/2020 16:30:47</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/21/2020 16:22:15</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

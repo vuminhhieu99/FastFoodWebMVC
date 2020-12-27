@@ -1,0 +1,168 @@
+﻿@model CnWeb_FastFood.Models.EF.Product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@section header
+{
+    Sản phẩm - Thông tin sản phẩm (#@Model.id_product)
+}
+
+<div>
+    <table style="width:100%">
+        <col style="width:40%">
+        <col style="width:15%">
+        <col style="width:15%">
+        <col style="width:15%">
+        <col style="width:15%">
+        <tr>
+            <td rowspan="2">
+                <dl class="dl-horizontal">
+                    <dt>
+                        Mã sản phẩm:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.id_product)
+                    </dd>
+
+                    <dt>
+                        Tên sản phẩm:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.name)
+                    </dd>
+
+                    <dt>
+                        Loại sản phẩm:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Category.name)
+                    </dd>
+
+                    <dt>
+                        Sẵn có:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.availability)
+                    </dd>
+
+                    <dt>
+                        Mô tả sản phẩm:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.description)
+                    </dd>
+
+                    <dt>
+                        Thông tin sản phẩm:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.information)
+                    </dd>
+
+                    <dt>
+                        Giá tiền:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.price) đ
+                    </dd>
+
+                    <dt>
+                        Sale:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.salePercent) %
+                    </dd>
+
+                    <dt>
+                        Giá sale:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.salePrice) đ
+                    </dd>
+
+                    <dt>
+                        Mức đánh giá:
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.rate)<i class="fa fa-star" style="color:goldenrod"></i>
+                    </dd>
+
+                    <dt>
+                        Ngày cập nhật:
+                    </dt>
+
+                    <dd>
+                        @Html.Raw(Convert.ToDateTime(Model.updated).ToString("dd/MM/yyyy"))
+                    </dd>
+
+                </dl>
+            </td>
+            <td colspan="4">
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <label>Hình ảnh chính</label><br />
+                        <img height="150" src="/Areas/Admin/Content/Photos/@Model.mainPhoto" alt="Chưa có" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <label>Hình ảnh phụ 1</label><br />
+                        <img height="100" src="/Areas/Admin/Content/Photos/@Model.photo1" alt="Chưa có" />
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <label>Hình ảnh phụ 2</label><br />
+                        <img height="100" src="/Areas/Admin/Content/Photos/@Model.photo2" alt="Chưa có" />
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <label>Hình ảnh phụ 3</label><br />
+                        <img height="100" src="/Areas/Admin/Content/Photos/@Model.photo3" alt="Chưa có" />
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <label>Hình ảnh phụ 4</label><br />
+                        <img height="100" src="/Areas/Admin/Content/Photos/@Model.photo4" alt="Chưa có" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<br />
+
+<button type="button" class="btn btn-warning btn-admin">
+    <a class="fa fa-edit"></a> &nbsp;
+    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.id_product })
+</button>
+<button type="button" class="btn btn-warning btn-admin">
+    <a class="fa fa-th-list"></a> &nbsp;
+    @Html.ActionLink("Danh sách", "Index")
+</button>

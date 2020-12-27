@@ -1,0 +1,339 @@
+﻿@model CnWeb_FastFood.Models.EF.Product
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "/Areas/Admin/Views/Shared/_AdminlteLayout.cshtml";
+}
+
+@section Styles{
+    <title>AdminLTE 3 | Product</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/fontawesome-free/css/all.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/dist/css/adminlte.min.css">
+
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/toastr/toastr.min.css">
+
+
+}
+<!-- Create Modal show phote -->
+<div class="modal fade" id="showPhotoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+           
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">@Model.mainPhoto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <img class="w-100" src="/Areas/Admin/Content/Photos/@Model.mainPhoto"/>                        
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <div class="col-auto d-flex align-items-center" style="margin-top: 10px;">
+                        <div class="btn-group">
+
+                            <button class="btn btn-danger delete">
+                                <i class="fas fa-trash"></i>
+                                <span>&nbsp;&nbsp;Xóa</span>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="btn btn-success addPhoto">
+                        <i class="fas fa-plus"></i>
+                        <span>&nbsp;&nbsp;Ảnh mới</span>
+                    </button> 
+                </div>
+        </div>
+    </div>
+</div>
+<!-- /. Create Modal -->
+<!-- Header content -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Danh sách mặt hàng</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Mặt hàng</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<!-- /.Header content -->
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="card">
+            @using (Html.BeginForm("Edit", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+
+                @Html.HiddenFor(model => model.id_product)
+                <div class="card-header">
+                    <i class="text-muted ">id : @Model.id_product</i>
+                    <button type="button" class="btn btn-default float-right">
+                        <a class="fa fa-th-list"></a> &nbsp;
+                        @Html.ActionLink("Danh sách", "Index")
+                    </button>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="form-group col-md-12 ">
+                                    <label for="exampleInputEmail1">Thể loại</label>
+                                    <div class="row">
+                                        @Html.DropDownList("id_category", (IEnumerable<SelectListItem>)ViewBag.CategoryList, "  --  Loại sản phẩm  --  ", new { @class = "form-control col-md-7" })
+                                        <div class="col-md-5">
+                                            <div class="form-check col-md-7 navbar-nav ml-auto">
+                                                <input type="checkbox" class="form-check-input" id="availability" name="availability" value="true" data-val="@Model.availability">
+                                                <label class="form-check-label" for="availability">Có sẵn</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Tên sản phẩm</label>
+                                <input type="text" class="form-control" id="name" placeholder="Tên sản phẩm" name="name" value="@Model.name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Giá gốc</label>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" id="price" placeholder="Giá gốc" name="price" min="0" value="@Model.price">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"> .đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Phần trăm giảm giá</label>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" id="salePercent" placeholder="%" name="salePercent" min="0" value="@Model.salePercent">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fas fa-percent"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Giá bán</label>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" id="salePrice" placeholder="Giá bán" name="salePrice" min="0" value="@Model.salePrice">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"> .đ</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Mô tả</label>
+                                <textarea class="form-control" rows="3" placeholder="Enter ..." name="description">@Model.description</textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Thông tin</label>
+                                <textarea class="form-control" rows="3" placeholder="Enter ..." name="information">@Model.information</textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Review</label>
+                                <textarea class="form-control" rows="3" placeholder="Enter ..." name="review">@Model.review</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-xl-12">
+                            <label for="exampleInputFile">Ảnh chính</label>
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    <img height="300" src="/Areas/Admin/Content/Photos/@Model.mainPhoto" data-toggle="modal" data-target="#showPhotoModal" data-name="@Model.mainPhoto" name="mainPhoto" style="cursor: pointer;" />
+
+                                </div>
+                                <div class="groupImgage" hidden="hidden">
+                                    <input type="file" name="mainPhoto" />
+                                    <input type="checkbox" name="mainPhotoChanged" value="true" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-xl-3">
+                            <label for="exampleInputFile">Ảnh 1</label>
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    <img height="80" src="/Areas/Admin/Content/Photos/@Model.photo1" data-toggle="modal" data-target="#showPhotoModal" data-name="@Model.photo1" name="photo1" style="cursor: pointer;" />
+
+                                </div>
+                                <div class="groupImgage" hidden="hidden">
+                                    <input type="file" name="photo1" />
+                                    <input type="checkbox" name="photo1Changed" value="true" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-xl-3">
+                            <label for="exampleInputFile">Ảnh 2</label>
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    <img height="80" src="/Areas/Admin/Content/Photos/@Model.photo2" data-toggle="modal" data-target="#showPhotoModal" data-name="@Model.photo2" name="photo2" style="cursor: pointer;" />
+
+                                </div>
+                                <div class="groupImgage" hidden="hidden">
+                                    <input type="file" name="photo2" />
+                                    <input type="checkbox" name="photo2Changed" value="true" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-xl-3">
+                            <label for="exampleInputFile">Ảnh 3</label>
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    <img height="80" src="/Areas/Admin/Content/Photos/@Model.photo3" data-toggle="modal" data-target="#showPhotoModal" data-name="@Model.photo3" name="photo3" style="cursor: pointer;" />
+
+                                </div>
+                                <div class="groupImgage" hidden="hidden">
+                                    <input type="file" name="photo3" />
+                                    <input type="checkbox" name="photo3Changed" value="true" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-xl-3">
+                            <label for="exampleInputFile">Ảnh 4</label>
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    <img height="80" src="/Areas/Admin/Content/Photos/@Model.photo4" data-toggle="modal" data-target="#showPhotoModal" data-name="@Model.photo4" name="photo4" style="cursor: pointer;" />
+
+                                </div>
+                                <div class="groupImgage" hidden="hidden">
+                                    <input type="file" name="photo4" />
+                                    <input type="checkbox" name="photo4Changed" value="true" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button type="reset" class="btn btn-warning cancel">
+                        <i class="fas fa-sync-alt"></i>
+                        <span>&nbsp;&nbsp;reset</span>
+                    </button>
+                </div>
+                <div class="card-footer d-flex justify-content-center">
+                    <input type="submit" id="Submit" name="Submit" class="btn btn-primary col-6" value="Lưu" />
+                </div>
+
+
+            }
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+
+@section Scripts{
+    <script src="/Assets/Admin/LTE/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/Assets/Admin/LTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AdminLTE App -->
+    <script src="/Assets/Admin/LTE/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="/Assets/Admin/LTE/dist/js/demo.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="/Assets/Admin/LTE/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- Toastr -->
+    <script src="/Assets/Admin/LTE/plugins/toastr/toastr.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            //add class for slidebar
+            $('#product').addClass('menu-open');
+            $('#product>a').addClass('active');
+            $('#product ul a').addClass('active');
+            //--------------//
+
+            //set status of checkbox
+            $('.content input:checkbox').each(function (i, item) {
+                if ($(item).data('val') == "True") {
+                    $(item).attr('checked', 'checked');
+                }
+            });
+            //-------------------//
+            $('.card-body img').click(function () {
+                $('.modal img').attr('src', this.src);
+                $('.modal img').attr('name', this.name);
+                $('#exampleModalCenterTitle').text($(this).data('name'));
+            });
+            
+            $('.addPhoto').click(function () {
+                if ($('#exampleModalCenterTitle').text() != "") {
+                    if (!confirm("bạn muỗn đổi ảnh mới?")) {
+                        return false;
+                    }
+                }
+               
+                var name = $('.modal img').attr('name');
+                var selectedImg = '.content img[name="' + name + '"]';
+                var parent = $(selectedImg).parent().parent();
+                var newFile = parent.find('input:file');
+                newFile.trigger('click');
+                newFile.change(function () {
+                    if (this.files.length > 0) {
+                        parent.find('input:checkbox').attr('checked', 'checked');
+                        var reader = new FileReader();
+                        reader.addEventListener('load', function () {
+                            $(selectedImg).attr('src', this.result);    
+                            var newName = newFile[0].files[0].name;
+                            $(selectedImg).data('name', newName);                            
+                            $('.modal img').attr('src', this.result);                            
+                            $('#exampleModalCenterTitle').text(newName);
+                            
+                        });
+                        reader.readAsDataURL(this.files[0])                    
+                    }                    
+                });               
+            });
+
+            $('.delete').click(function () {
+                if ($('#exampleModalCenterTitle').text() != "") {
+                    if (!confirm("bạn chắc chắn muốn xóa?")) {
+                        return false;
+                    }
+                }
+                var name = $('.modal img').attr('name');
+                var selectedImg = '.content img[name="' + name + '"]';
+                var parent = $(selectedImg).parent().parent();
+                parent.find('input:checkbox').attr('checked', 'checked');
+                $(selectedImg).attr('src', "#");  
+                $(selectedImg).data('name', '');   
+                $('.modal img').attr('src', "#");
+                $('#exampleModalCenterTitle').text("");
+                var file = parent.find('input:file');
+                file.val(null);
+            });
+
+        });
+    </script>
+
+}
+
+
+

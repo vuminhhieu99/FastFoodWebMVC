@@ -1,0 +1,15 @@
+﻿@model IEnumerable<CnWeb_FastFood.Models.EF.Category>
+
+<div class="section-title">
+    <h2>Danh sách sản phẩm FastFood</h2>
+</div>
+<div class="featured__controls">
+    <ul>
+        <li class="active" data-filter="*">Tất cả</li>
+        @foreach (var item in Model)
+        {
+            var filterName = ".c" + item.id_category;
+            <li data-filter="@filterName">@item.name</li>
+        }
+    </ul>
+</div>

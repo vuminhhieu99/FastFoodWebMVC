@@ -1,0 +1,33 @@
+﻿@model IEnumerable<CnWeb_FastFood.Models.EF.Product>
+
+<div class="product__discount">
+    <div class="section-title product__discount__title">
+        <h2>Sản phẩm giảm giá</h2>
+    </div>
+    <div class="row">
+        <div class="product__discount__slider owl-carousel">
+
+            @foreach (var item in Model)
+            {
+                if (item.salePercent != 0)
+                {
+                    <div class="col-lg-4">
+                        <div class="product__discount__item">
+                            <div class="product__discount__item__pic set-bg" data-setbg="/Areas/Admin/Content/Photos/@item.mainPhoto">
+                                <div class="product__discount__percent"><b>-@item.salePercent%</b></div>
+                                <ul class="product__item__pic__hover">
+                                    <li><a href="/ShopDetail/Index/@item.id_product"><i class="fa fa-info"></i></a></li>
+                                    <li><a href="/ShopCart/AddItem?productId=@item.id_product&quantity=1"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__discount__item__text">
+                                <h5>@item.name</h5>
+                                <div class="product__item__price">@item.salePrice đ <span style="color:crimson">@item.price đ</span></div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>

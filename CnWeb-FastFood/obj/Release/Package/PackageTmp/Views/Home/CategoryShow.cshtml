@@ -1,0 +1,11 @@
+﻿@model IEnumerable<CnWeb_FastFood.Models.EF.Category>
+
+<li>
+    <a href="#">Tổng hợp</a>
+</li>
+@foreach (var item in Model)
+{
+    <li>
+        <a href="#">@Html.DisplayFor(modelItem => item.name)</a>
+    </li>
+}

@@ -1,0 +1,102 @@
+﻿.col-xs-12 .box .box-header {
+    background: linear-gradient(to bottom, antiquewhite, white);
+}
+
+button {
+    color: white;
+}
+
+    button a {
+        color: white;
+    }
+
+        button a:hover {
+            color: azure;
+        }
+
+#example1_wrapper .row:first-child {
+    background: linear-gradient(to bottom, beige, white);
+    border-radius: 8px;
+}
+
+#example1_wrapper .row:nth-child(3) {
+    border-radius: 8px;
+    background: linear-gradient(to bottom, white, beige);
+}
+
+thead {
+    background-color: burlywood;
+}
+
+#example1_wrapper .row:first-child label {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 5px;
+    color: firebrick;
+}
+
+#example1_wrapper .row:first-child input {
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    padding-top: 0px;
+    color: black;
+}
+
+#example1_length label select {
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    padding-top: 0px;
+    color: black;
+}
+
+#example1_length label option {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+#example1_filter {
+    position: absolute;
+    left: -520px;
+}
+
+    #example1_filter label {
+    }
+
+        #example1_filter label input {
+            width: 430px;
+        }
+
+#example1_info {
+    font-style: italic;
+    color: firebrick;
+    font-size: 15px;
+}
+
+.combobox {
+    float: left;
+    height: 32px;
+    width: 222px;
+}
+
+.note {
+    background-color: floralwhite;
+    float: left;
+    height: 32px;
+    width: 410px;
+    color: crimson;
+    text-indent: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.btn-add {
+    height: 32px;
+    width: 130px;
+    text-align: left;
+}

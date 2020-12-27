@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+
+    @RenderSection("Styles", required: false)
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        @Html.Partial("_AdminlteMainHeader")
+        <!-- Main Sidebar Container -->
+        @Html.Partial("_AdminlteMainSidebar")
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">            
+            @RenderBody()
+        </div>
+        <!-- /.content-wrapper -->
+        @Html.Partial("_AdminlteFooter")
+        <!-- Control Sidebar -->
+        @Html.Partial("_AdminlteControlSidebar")
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+    
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+

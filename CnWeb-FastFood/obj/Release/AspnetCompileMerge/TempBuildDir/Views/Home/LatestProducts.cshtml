@@ -1,0 +1,39 @@
+﻿@model IEnumerable<CnWeb_FastFood.Models.EF.Product>
+
+<div class="col-lg-4 col-md-6">
+    <div class="latest-product__text">
+        <h4>Sản phẩm mới nhất</h4>
+        <div class="latest-product__slider owl-carousel">
+            <div class="latest-prdouct__slider__item">
+                @{ var count = 1;}
+
+                @foreach (var item in Model)
+                {
+
+                    <a href="/ShopDetail/Index/@item.id_product" class="latest-product__item">
+                        <div class="latest-product__item__pic">
+                            <img src="/Areas/Admin/Content/Photos/@item.mainPhoto" alt="" style="width:130px; height:110px">
+                        </div>
+                        <div class="latest-product__item__text">
+                            <h6>@item.name</h6>
+                            <span>@item.price đ</span>
+                        </div>
+                    </a>
+                    if (count == Model.Count())
+                    {
+                        break;
+                    }
+                    if (++count % 3 == 1)
+                    {
+                    @:</div><div class="latest-prdouct__slider__item">
+
+
+
+
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
