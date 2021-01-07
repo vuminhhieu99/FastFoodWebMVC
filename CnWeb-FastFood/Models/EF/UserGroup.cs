@@ -12,8 +12,8 @@ namespace CnWeb_FastFood.Models.EF
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public UserGroup()
         {
+            Credentials = new HashSet<Credential>();
             Users = new HashSet<User>();
-            Roles = new HashSet<Role>();
         }
 
         [Key]
@@ -24,9 +24,9 @@ namespace CnWeb_FastFood.Models.EF
         public string name { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<User> Users { get; set; }
+        public virtual ICollection<Credential> Credentials { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Role> Roles { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 }

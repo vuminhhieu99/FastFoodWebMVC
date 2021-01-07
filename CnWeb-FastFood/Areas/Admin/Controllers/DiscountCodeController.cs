@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace CnWeb_FastFood.Areas.Admin.Controllers
 {
-    public class DiscountCodeController : Controller
+    public class DiscountCodeController : BaseController
     {
         SnackShopDBContext db = new SnackShopDBContext();
         DiscountCodeDao dao = new DiscountCodeDao();

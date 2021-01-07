@@ -48,10 +48,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNetCore.Antiforgery, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNetCore.Antiforgery.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Antiforgery.dll</HintPath>
@@ -322,6 +322,9 @@
     <Compile Include="Areas\Admin\Controllers\DiscountCodeController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
+    <Compile Include="Areas\Admin\Models\AdminCommonConstants.cs" />
+    <Compile Include="Areas\Admin\Models\HasCredentialAttribute.cs" />
+    <Compile Include="Areas\Admin\Models\ResultLogin.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Models\CommonConstants.cs" />
     <Compile Include="Areas\Admin\Models\UserLogin.cs" />
@@ -349,24 +352,26 @@
     <Compile Include="Models\Dao\Client\CustomerDao.cs" />
     <Compile Include="Models\Dao\Client\HomeProductDao.cs" />
     <Compile Include="Models\Dao\Client\ShopDetailDao.cs" />
+    <Compile Include="Models\BillView.cs" />
+    <Compile Include="Models\CartItem.cs" />
+    <Compile Include="Models\Checkout.cs" />
     <Compile Include="Models\EF\Bill.cs" />
     <Compile Include="Models\EF\BillDetail.cs" />
     <Compile Include="Models\EF\BillStatus.cs" />
-    <Compile Include="Models\BillView.cs" />
     <Compile Include="Models\EF\Cart.cs" />
     <Compile Include="Models\EF\CartDetail.cs" />
-    <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\EF\Category.cs" />
-    <Compile Include="Models\Checkout.cs" />
+    <Compile Include="Models\EF\Credential.cs" />
     <Compile Include="Models\EF\Customer.cs" />
     <Compile Include="Models\EF\DiscountCode.cs" />
     <Compile Include="Models\EF\Product.cs" />
     <Compile Include="Models\EF\ProductDetail.cs" />
-    <Compile Include="Models\ProductView.cs" />
     <Compile Include="Models\EF\Role.cs" />
     <Compile Include="Models\EF\SnackShopDBContext.cs" />
+    <Compile Include="Models\EF\sysdiagram.cs" />
     <Compile Include="Models\EF\User.cs" />
     <Compile Include="Models\EF\UserGroup.cs" />
+    <Compile Include="Models\ProductView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -2917,6 +2922,7 @@
     <Content Include="Assets\Admin\LTE\plugins\summernote\summernote.min.js.map" />
     <Content Include="Assets\Admin\LTE\plugins\toastr\toastr.js.map" />
     <Content Include="Areas\Admin\Views\Shared\_AdminlteLayout.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\error_401.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile1.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile10.pubxml" />
@@ -2991,6 +2997,7 @@
     <Folder Include="Areas\Client\Models\" />
     <Folder Include="Areas\Client\Views\Shared\" />
     <Folder Include="Views\Base\" />
+    <Folder Include="Views\Default\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -3007,6 +3014,7 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">

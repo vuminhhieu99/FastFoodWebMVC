@@ -15,7 +15,7 @@ using Newtonsoft.Json;
 
 namespace CnWeb_FastFood.Areas.Admin.Controllers
 {
-    public class BillController : Controller
+    public class BillController : BaseController
     {
         SnackShopDBContext db = new SnackShopDBContext();
         BillDao Bdao = new BillDao();

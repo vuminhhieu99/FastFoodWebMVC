@@ -1,18 +1,15 @@
+using System;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity;
+using System.Linq;
+
 namespace CnWeb_FastFood.Models.EF
 {
-    using System;
-    using System.Data.Entity;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Linq;
-
     public partial class SnackShopDBContext : DbContext
     {
         public SnackShopDBContext()
             : base("name=SnackShopDBContext")
-
         {
-           
-
         }
 
         public virtual DbSet<Bill> Bills { get; set; }
@@ -21,11 +18,13 @@ namespace CnWeb_FastFood.Models.EF
         public virtual DbSet<Cart> Carts { get; set; }
         public virtual DbSet<CartDetail> CartDetails { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<Credential> Credentials { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<DiscountCode> DiscountCodes { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<ProductDetail> ProductDetails { get; set; }
         public virtual DbSet<Role> Roles { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<UserGroup> UserGroups { get; set; }
 
@@ -72,11 +71,6 @@ namespace CnWeb_FastFood.Models.EF
                 .Property(e => e.id_discountCode)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Cart>()
-                .HasMany(e => e.CartDetails)
-                .WithRequired(e => e.Cart)
-                .HasForeignKey(e => e.id_cart);
-
             modelBuilder.Entity<CartDetail>()
                 .Property(e => e.price)
                 .HasPrecision(10, 0);
@@ -93,6 +87,14 @@ namespace CnWeb_FastFood.Models.EF
                 .HasMany(e => e.Products)
                 .WithOptional(e => e.Category)
                 .WillCascadeOnDelete();
+
+            modelBuilder.Entity<Credential>()
+                .Property(e => e.id_role)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Credential>()
+                .Property(e => e.id_userGroup)
+                .IsUnicode(false);
 
             modelBuilder.Entity<Customer>()
                 .Property(e => e.phone)
@@ -176,11 +178,6 @@ namespace CnWeb_FastFood.Models.EF
             modelBuilder.Entity<Role>()
                 .Property(e => e.id_role)
                 .IsUnicode(false);
-
-            modelBuilder.Entity<Role>()
-                .HasMany(e => e.UserGroups)
-                .WithMany(e => e.Roles)
-                .Map(m => m.ToTable("Credential").MapLeftKey("id_role").MapRightKey("id_userGroup"));
 
             modelBuilder.Entity<User>()
                 .Property(e => e.userName)

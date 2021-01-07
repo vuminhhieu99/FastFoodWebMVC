@@ -10,7 +10,7 @@ using System.Web.Mvc;
 
 namespace CnWeb_FastFood.Areas.Admin.Controllers
 {
-    public class CustomerController : Controller
+    public class CustomerController : BaseController
     {
         SnackShopDBContext db = new SnackShopDBContext();
         CustomerDao Cdao = new CustomerDao();

@@ -7,6 +7,7 @@ namespace CnWeb_FastFood.Models.EF
     using System.Data.Entity.Spatial;
 
     [Table("User")]
+    [Serializable]
     public partial class User
     {
         [Key]

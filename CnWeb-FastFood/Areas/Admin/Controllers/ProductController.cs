@@ -11,17 +11,18 @@ using System.Data;
 using System.Data.Entity;
 using System.Text;
 using System.Windows.Documents;
+using CnWeb_FastFood.Areas.Admin.Models;
 
 namespace CnWeb_FastFood.Areas.Admin.Controllers
 {
-    public class ProductController : Controller
+    public class ProductController : BaseController
     {
         SnackShopDBContext db = new SnackShopDBContext();
         ProductDao Pdao = new ProductDao();
         CategoryDao Cdao = new CategoryDao();
 
         // GET: Admin/Product
-
+        [HasCredential(id_role  ="VIEW_USER")]
         public ActionResult Index(int? page, int? PageSize, string searching = "")
         {
             ViewBag.SearchString = searching;

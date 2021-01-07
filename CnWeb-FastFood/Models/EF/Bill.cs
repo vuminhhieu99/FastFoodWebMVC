@@ -1,11 +1,10 @@
 namespace CnWeb_FastFood.Models.EF
 {
-    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-   
+    using System.Data.Entity.Spatial;
 
     [Table("Bill")]
     public partial class Bill
@@ -39,12 +38,11 @@ namespace CnWeb_FastFood.Models.EF
         public string phone { get; set; }
 
         public int? id_status { get; set; }
-        
+
         public virtual BillStatus BillStatus { get; set; }
-        
+
         public virtual Customer Customer { get; set; }
 
-        
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BillDetail> BillDetails { get; set; }
     }

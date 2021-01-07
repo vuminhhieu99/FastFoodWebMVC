@@ -10,7 +10,7 @@ using CnWeb_FastFood.Models.EF;
 
 namespace CnWeb_FastFood.Areas.Admin.Controllers
 {
-    public class BillDetailsController : Controller
+    public class BillDetailsController : BaseController
     {
         private SnackShopDBContext db = new SnackShopDBContext();
 

@@ -1,4 +1,5 @@
-﻿using CnWeb_FastFood.Models;
+﻿using CnWeb_FastFood.Areas.Admin.Models;
+using CnWeb_FastFood.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +14,10 @@ namespace CnWeb_FastFood.Areas.Admin.Controllers
         // GET: Admin/Base
         protected override void OnActionExecuted(ActionExecutedContext filterContext)
         {
-            var session = Session[CommonConstants.USER_SESSION];
+            var session = Session[AdminCommonConstants.USER_SESSION];
             if (session == null)
             {
-                filterContext.Result = new RedirectToRouteResult(new System.Web.Routing.RouteValueDictionary(new { Controller = "login", action = "Index", Area = "Admin" }));
+                filterContext.Result = new RedirectToRouteResult(new System.Web.Routing.RouteValueDictionary(new { Controller = "Login", action = "Index", Area = "Admin" }));
             }
             base.OnActionExecuted(filterContext);
         }

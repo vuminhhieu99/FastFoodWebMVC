@@ -14,6 +14,10 @@ namespace CnWeb_FastFood.Areas.Admin.Controllers
         // GET: Admin/Login
         public ActionResult Index()
         {
+            if (TempData["result"] != null)
+            {
+                ModelState.AddModelError("result", TempData["result"].ToString());
+            }
             return View();
         }
 
@@ -23,34 +27,24 @@ namespace CnWeb_FastFood.Areas.Admin.Controllers
             {
                 var dao = new UserDao();
                 var result = dao.Login(collection["inputUserName"].ToString(), collection["UserPassword"].ToString());
-                if (result == 1)
+                if (result.status == true)
                 {
                     var user = dao.GetById(collection["inputUserName"].ToString());
                     var userSession = new UserLogin();
                     userSession.Name = user.name;
                     userSession.UserID = user.id_user;
                     userSession.CreateDate = user.createDate;
-
-                    Session.Add(CommonConstants.USER_SESSION, userSession.Name);
-                    Session.Add(CommonConstants.ID_SESSION, userSession.UserID);
-                    Session.Add(CommonConstants.CREATE_USER_SESSION, userSession.CreateDate);
+                    var listCredential = dao.GetListCredential(user.id_userGroup);
+                    Session.Add(AdminCommonConstants.USER_SESSION, userSession.Name);
+                    Session.Add(AdminCommonConstants.ID_SESSION, userSession.UserID);
+                    Session.Add(AdminCommonConstants.CREATE_USER_SESSION, userSession.CreateDate);
+                    Session.Add(AdminCommonConstants.SESSION_CREDENTIAL, listCredential);
                     return RedirectToAction("Index", "Dashboard");
-                }
-                else if (result == 0)
-                {
-                    ModelState.AddModelError("", "Account isn't exist");
-                }
-                else if (result == -1)
-                {
-                    ModelState.AddModelError("", "Account is locked");
-                }
-                else if (result == -2)
-                {
-                    ModelState.AddModelError("", "Password is wronged");
-                }
+                }               
+               
                 else
                 {
-                    ModelState.AddModelError("", "Login false");
+                    TempData["result"]= result.message;
                 }
             }           
             return RedirectToAction("Index");
