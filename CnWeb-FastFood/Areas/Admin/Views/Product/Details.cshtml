@@ -2,164 +2,250 @@
 
 @{
     ViewBag.Title = "Details";
-   Layout = "/Areas/Admin/Views/Shared/_AdminlteLayout.cshtml";
+    Layout = "/Areas/Admin/Views/Shared/_AdminlteLayout.cshtml";
 }
 
+@section Styles{
+    <title>AdminLTE 3 | Product</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/fontawesome-free/css/all.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/dist/css/adminlte.min.css">
+
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/toastr/toastr.min.css">
 
 
-<div>
-    <table style="width:100%">
-        <col style="width:40%">
-        <col style="width:15%">
-        <col style="width:15%">
-        <col style="width:15%">
-        <col style="width:15%">
-        <tr>
-            <td rowspan="2">
-                <dl class="dl-horizontal">
-                    <dt>
-                        Mã sản phẩm:
-                    </dt>
+}
+<!-- Header content -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Danh sách mặt hàng</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Mặt hàng</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<!-- /.Header content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="card">  
+           @Html.HiddenFor(model => model.id_product)
+            <div class="card-header">
+                <i class="text-muted ">id : @Model.id_product</i>
 
-                    <dd>
-                        @Html.DisplayFor(model => model.id_product)
-                    </dd>
+                <button type="button" class="btn btn-default float-right">
+                    <a class="fa fa-th-list"></a> &nbsp;
+                    @Html.ActionLink("Danh sách", "Index")
+                </button>
+                <button type="button" class="btn btn-default float-right mr-2">
+                    <a class="fa fa-edit"></a> &nbsp;
+                    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.id_product })
+                </button>
+            </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            
+                                <dl class="dl-horizontal">
+                                    <div>
+                                        Mã sản phẩm:
+                                        <b>
+                                            @Html.DisplayFor(model => model.id_product)
+                                        </b>
+                                    </div>
+                                    <div class=fontside>
+                                        Tên sản phẩm:
+                                        <b>
+                                            @Html.DisplayFor(model => model.name)
+                                        </b>
+                                    </div>
+                                    <div>
+                                        Loại sản phẩm:
+                                        <b>
+                                            @Html.DisplayFor(model => model.Category.name)
+                                        </b>
+                                    </div>
 
-                    <dt>
-                        Tên sản phẩm:
-                    </dt>
+                                    <div>
+                                        Sẵn có:
+                                        <b>
+                                            @Html.DisplayFor(model => model.availability)
+                                        </b>
+                                    </div>
 
-                    <dd>
-                        @Html.DisplayFor(model => model.name)
-                    </dd>
+                                    <div>
+                                        Giá tiền:
+                                        <b>
+                                            @Html.DisplayFor(model => model.price) đ
+                                        </b>
+                                    </div>
+                                    <div>
+                                        Sale:
+                                        <b>
+                                            @Html.DisplayFor(model => model.salePercent) %
+                                        </b>
+                                    </div>
 
-                    <dt>
-                        Loại sản phẩm:
-                    </dt>
+                                    <div>
+                                        Giá sale:
+                                        <b>
+                                            @Html.DisplayFor(model => model.salePrice) đ
+                                        </b>
+                                    </div>
+                                    <div>
+                                        Mức đánh giá:
+                                    <b>
+                                        @Html.DisplayFor(model => model.rate)<i class="fa fa-star" style="color:goldenrod"></i>
+                                    </b>
+                                    </div>
+                                    <div>
+                                        Ngày cập nhật:
+                                        <b>
+                                            @Html.Raw(Convert.ToDateTime(Model.updated).ToString("dd/MM/yyyy"))
+                                        </b>
+                                    </div>
+                                </dl>
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Mô Tả sản phẩm</label>
+                                <textarea class="form-control" rows="3" placeholder="Enter ..." name="review" disabled >@Model.description</textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Bài đánh giá</label>
+                                <textarea class="form-control" rows="3" placeholder="Enter ..." name="review" disabled>@Model.information</textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Bài đánh giá</label>
+                                <textarea class="form-control" rows="3" placeholder="Enter ..." name="review" disabled>@Model.review</textarea>
+                            </div>
+                            <dd>
+                                @Html.DisplayFor(model => model.information)
+                            </dd>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-xl-12">
+                            <label for="exampleInputFile">Ảnh chính</label>
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    <img height="300" src="/Areas/Admin/Content/Photos/@Model.mainPhoto" data-toggle="modal" data-target="#showPhotoModal" data-name="@Model.mainPhoto" name="mainPhoto" style="cursor: pointer;" />
 
-                    <dd>
-                        @Html.DisplayFor(model => model.Category.name)
-                    </dd>
+                                </div>
+                                <div class="groupImgage" hidden="hidden">
+                                    <input type="file" name="mainPhoto" />
+                                    <input type="checkbox" name="mainPhotoChanged" value="true" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-xl-3">
+                            <label for="exampleInputFile">Ảnh 1</label>
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    <img height="80" src="/Areas/Admin/Content/Photos/@Model.photo1" data-toggle="modal" data-target="#showPhotoModal" data-name="@Model.photo1" name="photo1" style="cursor: pointer;" />
 
-                    <dt>
-                        Sẵn có:
-                    </dt>
+                                </div>
+                                <div class="groupImgage" hidden="hidden">
+                                    <input type="file" name="photo1" />
+                                    <input type="checkbox" name="photo1Changed" value="true" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-xl-3">
+                            <label for="exampleInputFile">Ảnh 2</label>
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    <img height="80" src="/Areas/Admin/Content/Photos/@Model.photo2" data-toggle="modal" data-target="#showPhotoModal" data-name="@Model.photo2" name="photo2" style="cursor: pointer;" />
 
-                    <dd>
-                        @Html.DisplayFor(model => model.availability)
-                    </dd>
+                                </div>
+                                <div class="groupImgage" hidden="hidden">
+                                    <input type="file" name="photo2" />
+                                    <input type="checkbox" name="photo2Changed" value="true" />
+                                </div>
+                            </div>
+                        </div>
 
-                    <dt>
-                        Mô tả sản phẩm:
-                    </dt>
+                        <div class="form-group col-xl-3">
+                            <label for="exampleInputFile">Ảnh 3</label>
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    <img height="80" src="/Areas/Admin/Content/Photos/@Model.photo3" data-toggle="modal" data-target="#showPhotoModal" data-name="@Model.photo3" name="photo3" style="cursor: pointer;" />
 
-                    <dd>
-                        @Html.DisplayFor(model => model.description)
-                    </dd>
+                                </div>
+                                <div class="groupImgage" hidden="hidden">
+                                    <input type="file" name="photo3" />
+                                    <input type="checkbox" name="photo3Changed" value="true" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-xl-3">
+                            <label for="exampleInputFile">Ảnh 4</label>
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    <img height="80" src="/Areas/Admin/Content/Photos/@Model.photo4" data-toggle="modal" data-target="#showPhotoModal" data-name="@Model.photo4" name="photo4" style="cursor: pointer;" />
 
-                    <dt>
-                        Thông tin sản phẩm:
-                    </dt>
+                                </div>
+                                <div class="groupImgage" hidden="hidden">
+                                    <input type="file" name="photo4" />
+                                    <input type="checkbox" name="photo4Changed" value="true" />
+                                </div>
+                            </div>
+                        </div>
 
-                    <dd>
-                        @Html.DisplayFor(model => model.information)
-                    </dd>
-
-                    <dt>
-                        Giá tiền:
-                    </dt>
-
-                    <dd>
-                        @Html.DisplayFor(model => model.price) đ
-                    </dd>
-
-                    <dt>
-                        Sale:
-                    </dt>
-
-                    <dd>
-                        @Html.DisplayFor(model => model.salePercent) %
-                    </dd>
-
-                    <dt>
-                        Giá sale:
-                    </dt>
-
-                    <dd>
-                        @Html.DisplayFor(model => model.salePrice) đ
-                    </dd>
-
-                    <dt>
-                        Mức đánh giá:
-                    </dt>
-
-                    <dd>
-                        @Html.DisplayFor(model => model.rate)<i class="fa fa-star" style="color:goldenrod"></i>
-                    </dd>
-
-                    <dt>
-                        Ngày cập nhật:
-                    </dt>
-
-                    <dd>
-                        @Html.Raw(Convert.ToDateTime(Model.updated).ToString("dd/MM/yyyy"))
-                    </dd>
-
-                </dl>
-            </td>
-            <td colspan="4">
-                <div class="form-group">
-                    <div class="col-md-10">
-                        <label>Hình ảnh chính</label><br />
-                        <img height="150" src="/Areas/Admin/Content/Photos/@Model.mainPhoto" alt="Chưa có" />
                     </div>
                 </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div class="form-group">
-                    <div class="col-md-10">
-                        <label>Hình ảnh phụ 1</label><br />
-                        <img height="100" src="/Areas/Admin/Content/Photos/@Model.photo1" alt="Chưa có" />
-                    </div>
-                </div>
-            </td>
-            <td>
-                <div class="form-group">
-                    <div class="col-md-10">
-                        <label>Hình ảnh phụ 2</label><br />
-                        <img height="100" src="/Areas/Admin/Content/Photos/@Model.photo2" alt="Chưa có" />
-                    </div>
-                </div>
-            </td>
-            <td>
-                <div class="form-group">
-                    <div class="col-md-10">
-                        <label>Hình ảnh phụ 3</label><br />
-                        <img height="100" src="/Areas/Admin/Content/Photos/@Model.photo3" alt="Chưa có" />
-                    </div>
-                </div>
-            </td>
-            <td>
-                <div class="form-group">
-                    <div class="col-md-10">
-                        <label>Hình ảnh phụ 4</label><br />
-                        <img height="100" src="/Areas/Admin/Content/Photos/@Model.photo4" alt="Chưa có" />
-                    </div>
-                </div>
-            </td>
-        </tr>
-    </table>
-</div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
 
-<br />
+@section Scripts{
+    <script src="/Assets/Admin/LTE/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/Assets/Admin/LTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables -->
+    <script src="/Assets/Admin/LTE/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/Assets/Admin/LTE/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="/Assets/Admin/LTE/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="/Assets/Admin/LTE/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/Assets/Admin/LTE/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="/Assets/Admin/LTE/dist/js/demo.js"></script>
 
-<button type="button" class="btn btn-warning btn-admin">
-    <a class="fa fa-edit"></a> &nbsp;
-    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.id_product })
-</button>
-<button type="button" class="btn btn-warning btn-admin">
-    <a class="fa fa-th-list"></a> &nbsp;
-    @Html.ActionLink("Danh sách", "Index")
-</button>
+    <!-- SweetAlert2 -->
+    <script src="/Assets/Admin/LTE/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- Toastr -->
+    <script src="/Assets/Admin/LTE/plugins/toastr/toastr.min.js"></script>
+
+    <!-- Bootstrap Switch -->
+    <script src="/Assets/Admin/LTE/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <!-- BS-Stepper -->
+    <script src="/Assets/Admin/LTE/plugins/bs-stepper/js/bs-stepper.min.js"></script>
+
+    <!-- dropzonejs -->
+    <script src="/Assets/Admin/LTE/plugins/dropzone/min/dropzone.min.js"></script>
+
+    <script src="/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+}

@@ -156,9 +156,7 @@
                                     <td>
                                         @Html.DisplayFor(modelItem => item.discount)
                                     </td>
-                                    <td>
-                                        <i class="fa fa-info-circle"></i> &nbsp;
-                                        @Html.ActionLink("Xem", "Details", new { id = item.id_discountCode }, new { onclick = "DelSuccess()" }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    <td>                                        
                                         <i class="fa fa-edit"></i> &nbsp;
                                         @Html.ActionLink("Sửa", "Edit", new { id = item.id_discountCode }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                         <i class="fa fa-trash"></i> &nbsp;

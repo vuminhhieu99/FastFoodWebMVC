@@ -60,7 +60,7 @@
                                 <div class="dateBill checkout__order__subtotal"><span><i class="timeBill"></i></span> </div>
                             </div>
 
-                            <div>Sản phẩm <span>Tổng tiền</span></div>
+                            <div>Sản phẩm</div>
                             <ul class="checkout__order__products">
                             </ul>
                             <div class="checkout__order__subtotal">Tổng tiền gốc <span class="subtotal"></span></div>
@@ -333,8 +333,11 @@
                     var bill = JSON.parse(data);
                     $('#id_bill').val(bill.id_bill);
                     $('.timeBill').text(bill.creatDate.toString());
+
+                    //remove old list 
+                    $('.checkout__order__products').empty();
                     $.each(bill.BillDetails, function (index, item) {
-                        $('.checkout__order__products').append(`<li>${item.amount} &nbsp;&nbsp;&nbsp; ${item.Product.name}<span>${item.intoMoney}</span ></li >`);
+                        $('.checkout__order__products').append(`<li>${item.amount} &nbsp;&nbsp;&nbsp; ${item.Product.name}<span>----${item.intoMoney}vnđ</span ></li >`);
 
                     });
                     $('.subtotal').text(bill.subtotal);
@@ -468,42 +471,7 @@
         };
                                             //---------------------//
 
-        // show detail Bill
-        $('tbody tr').click(function () {
-            $('#DetailBillModal').modal('show');
-            var arrange = $(this).find('td');
-            var id_bill = arrange[0].innerText;
-            $.ajax({
-                url: "/Admin/Bill/Details",
-                data: { id: id_bill },
-                dataType: 'json',
-                contentType: 'text',
-                type: 'get'
-            }).done(function (data) {
-                var bill = JSON.parse(data);
-                $('#id_bill').val(bill.id_bill);
-                $('.timeBill').text(bill.creatDate.toString());
-                $.each(bill.BillDetails, function (index, item) {
-                    $('.checkout__order__products').append(`<li>${item.amount} &nbsp;&nbsp;&nbsp; ${item.Product.name}<span>${item.intoMoney}</span ></li >`);
-
-                });
-                $('.subtotal').text(bill.subtotal);
-                $('.discount').text(bill.discount);
-                $('.discountCode').text(bill.discountCode);
-                $('.total').text(bill.total);
-                $('.customer').text(bill.Customer.name);
-                $('.address').text(bill.address);
-                $('.phone').text(bill.phone);
-
-                var strStatus = 'input[name="id_status"][value="' + bill.id_status + '"]';
-                $(strStatus).trigger('click');
-                //var list = $('input[name="id_status"]');
-                ////$.each(list, function (index, item) {
-                ////    console.log(item.checked);
-                ////    console.log("\n");
-                ////});
-            })
-        });
+       
 
         // reponse after UpdateStatusBill
         function fnUpdateStatusSuccess(data) {

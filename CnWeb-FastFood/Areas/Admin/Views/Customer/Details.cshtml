@@ -2,104 +2,137 @@
 
 @{
     ViewBag.Title = "Details";
-   Layout = "/Areas/Admin/Views/Shared/_AdminlteLayout.cshtml";
+    Layout = "/Areas/Admin/Views/Shared/_AdminlteLayout.cshtml";
 }
 
+@section Styles{
+    <title>AdminLTE 3 | Product</title>
 
-<div>
-    <table style="width:60%">
-        <col style="width:40%">
-        <col style="width:20%">
-        <tr>
-            <td>
-                <dl class="dl-horizontal">
-                    <dt>
-                        Mã khách hàng:
-                    </dt>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/fontawesome-free/css/all.min.css">
 
-                    <dd>
-                        @Html.DisplayFor(model => model.id_customer)
-                    </dd>
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/dist/css/adminlte.min.css">
 
-                    <dt>
-                        Tên khách hàng:
-                    </dt>
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
 
-                    <dd>
-                        @Html.DisplayFor(model => model.name)
-                    </dd>
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/toastr/toastr.min.css">
 
-                    <dt>
-                        Số điện thoại
-                    </dt>
 
-                    <dd>
-                        @Html.DisplayFor(model => model.phone)
-                    </dd>
+}
+<section class="content">
+    <div class="container-fluid">
+        <div class="card">
+            @Html.HiddenFor(model => model.id_customer)
+            <div class="card-header">
+                <i class="text-muted ">id : @Model.id_customer</i>
+                <button type="button" class="btn btn-default float-right">
+                    <a class="fa fa-th-list"></a> &nbsp;
+                    @Html.ActionLink("Danh sách", "Index")
+                </button>
+                <button type="button" class="btn btn-default float-right mr-2">
+                    <a class="fa fa-edit"></a> &nbsp;
+                    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.id_customer })
+                </button>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-2">
 
-                    <dt>
-                        Địa chỉ:
-                    </dt>
+                        <div class="row d-flex justify-content-center">
 
-                    <dd>
-                        @Html.DisplayFor(model => model.address)
-                    </dd>
+                            <div class="form-group row">
+                                <div class="col-md-10">
+                                    <img height="200" src="/Areas/Admin/Content/Photos/@Model.avatar" data-toggle="modal" data-target="#showPhotoModal" data-name="@Model.avatar" name="avatar" style="cursor: pointer;" />
 
-                    <dt>
-                        UserName:
-                    </dt>
+                                </div>
+                                <div class="groupImgage" hidden="hidden">
+                                    <input type="file" name="avatar" />
+                                    <input type="checkbox" name="avatarChanged" value="true" />
+                                </div>
+                            </div>
 
-                    <dd>
-                        @Html.DisplayFor(model => model.userName)
-                    </dd>
-
-                    <dt>
-                        SubTotalCart:
-                    </dt>
-
-                    <dd>
-                        @Html.DisplayFor(model => model.subtotalCart)
-                    </dd>
-
-                    <dt>
-                        TotalCart:
-                    </dt>
-
-                    <dd>
-                        @Html.DisplayFor(model => model.totalCart)
-                    </dd>
-
-                    <dt>
-                        Mã giảm giá:
-                    </dt>
-
-                    <dd>
-                        @Html.DisplayFor(model => model.id_discountCode)
-                    </dd>
-
-                </dl>
-            </td>
-            <td>
-                <div class="form-group">
-                    <div class="col-md-10">
-                        <label>Avatar</label><br />
-                        <img height="150" src="/Areas/Admin/Content/Photos/@Model.avatar" alt="Chưa có" />
+                        </div>
+                        <div class="row  d-flex justify-content-center">
+                            <label>Avatar</label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div>
+                            Mã khách hàng:
+                            <b>
+                                @Html.DisplayFor(model => model.id_customer)
+                            </b>
+                        </div>
+                        <div>
+                            Tên khách hàng:
+                            <b>
+                                @Html.DisplayFor(model => model.name)
+                            </b>
+                        </div>
+                        <div>
+                            Số điện thoại:
+                            <b>
+                                @Html.DisplayFor(model => model.phone)
+                            </b>
+                        </div>
+                        <div>
+                            Địa chỉ:
+                            <b>
+                                @Html.DisplayFor(model => model.address)
+                            </b>
+                        </div>
+                        <div>
+                            UserName:
+                            <b>
+                                @Html.DisplayFor(model => model.userName)
+                            </b>
+                        </div>
+                        <div>
+                            SubTotalCart:
+                            <b>
+                                @Html.DisplayFor(model => model.subtotalCart)
+                            </b>
+                        </div>
+                        <div>
+                            TotalCart:
+                            <b>
+                                @Html.DisplayFor(model => model.totalCart)
+                            </b>
+                        </div>
+                        <div>
+                            Mã giảm giá:
+                            <b>
+                                @Html.DisplayFor(model => model.id_discountCode)
+                            </b>
+                        </div>
                     </div>
                 </div>
-            </td>
-        </tr>
-    </table>
-</div>
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
 
+@section Scripts{
+    <script src="/Assets/Admin/LTE/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/Assets/Admin/LTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <!-- AdminLTE App -->
+    <script src="/Assets/Admin/LTE/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="/Assets/Admin/LTE/dist/js/demo.js"></script>
 
-<br />
-
-@*<button type="button" class="btn btn-warning btn-admin">
-    <a class="fa fa-edit"></a> &nbsp;
-    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.id_customer })
-</button>*@
-<button type="button" class="btn btn-warning btn-admin">
-    <a class="fa fa-th-list"></a> &nbsp;
-    @Html.ActionLink("Danh sách", "Index")
-</button>
+    <!-- SweetAlert2 -->
+    <script src="/Assets/Admin/LTE/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- Toastr -->
+    <script src="/Assets/Admin/LTE/plugins/toastr/toastr.min.js"></script>
+}
