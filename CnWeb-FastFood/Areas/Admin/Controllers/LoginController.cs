@@ -49,5 +49,20 @@ namespace CnWeb_FastFood.Areas.Admin.Controllers
             }           
             return RedirectToAction("Index");
         }
+
+        public ActionResult Register()
+        {
+
+            return View();
+        }
+
+        public ActionResult CreateAccount(FormCollection collection)
+        {
+            if (ModelState.IsValid)
+            {
+                collection["inputUserName"].ToString();
+            }
+                return RedirectToAction("Index");
+        }
     }
 }
