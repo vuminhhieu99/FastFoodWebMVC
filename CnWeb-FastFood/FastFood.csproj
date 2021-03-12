@@ -2923,6 +2923,7 @@
     <Content Include="Assets\Admin\LTE\plugins\toastr\toastr.js.map" />
     <Content Include="Areas\Admin\Views\Shared\_AdminlteLayout.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\error_401.cshtml" />
+    <Content Include="Areas\Admin\Views\Login\Register.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile1.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile10.pubxml" />

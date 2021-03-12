@@ -4,3 +4,9 @@ D:\FastFood Web MVC\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 D:\FastFood Web MVC\Common\obj\Debug\Common.dll
 D:\FastFood Web MVC\Common\obj\Debug\Common.pdb
 D:\FastFood Web MVC\Common\obj\Debug\Common.csprojAssemblyReference.cache
+C:\vmhieu\FastFoodWebMVC\Common\bin\Debug\Common.dll
+C:\vmhieu\FastFoodWebMVC\Common\bin\Debug\Common.pdb
+C:\vmhieu\FastFoodWebMVC\Common\obj\Debug\Common.csprojAssemblyReference.cache
+C:\vmhieu\FastFoodWebMVC\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\vmhieu\FastFoodWebMVC\Common\obj\Debug\Common.dll
+C:\vmhieu\FastFoodWebMVC\Common\obj\Debug\Common.pdb
