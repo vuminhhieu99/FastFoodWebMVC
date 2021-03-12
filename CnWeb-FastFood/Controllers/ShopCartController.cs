@@ -13,10 +13,12 @@ namespace CnWeb_FastFood.Controllers
 {
     public class ShopCartController : Controller
     {
-        
+        SnackShopDBContext db = new SnackShopDBContext();
+
         // GET: ShopCart
         public ActionResult Index(string discountCode)
         {
+
             var cart = Session[CommonConstants.CartSession];
             var list = new List<CartItem>();           
             if (cart != null)
@@ -33,7 +35,7 @@ namespace CnWeb_FastFood.Controllers
 
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 ;
             }
@@ -81,6 +83,7 @@ namespace CnWeb_FastFood.Controllers
 
                 }
                 Session[CommonConstants.CartSession] = list;
+                Session[CommonConstants.Count] = list.Count();
 
             }
             else
@@ -94,7 +97,9 @@ namespace CnWeb_FastFood.Controllers
                 list.Add(item);
 
                 Session[CommonConstants.CartSession] = list;
+                Session[CommonConstants.Count] = list.Count();
             }
+            UpdateCart();
             return RedirectToAction("Index");
         }
 
@@ -135,6 +140,8 @@ namespace CnWeb_FastFood.Controllers
 
             }
             Session[CommonConstants.CartSession] = sessionCart;
+            Session[CommonConstants.Count] = sessionCart.Count();
+            UpdateCart();
             return Json(new
             {
                 status = true
@@ -144,6 +151,8 @@ namespace CnWeb_FastFood.Controllers
         public JsonResult DeleteAll()
         {
             Session[CommonConstants.CartSession] = null;
+            Session[CommonConstants.Count] = 0;
+            UpdateCart();
             return Json(new
             {
                 status = true
@@ -167,10 +176,34 @@ namespace CnWeb_FastFood.Controllers
             var sessionCart = (List<CartItem>)Session[CommonConstants.CartSession];
             var item = sessionCart.SingleOrDefault(x => x.Products.id_product == id);
             sessionCart.Remove(item);
+            Session[CommonConstants.Count] = (int)Session[CommonConstants.Count]-1 ;
+            UpdateCart();
             return RedirectToAction("Index");
         }
 
-     
+        private void UpdateCart()
+        {
+             int id_customer = Int32.Parse(Session[CommonConstants.ID_SESSION].ToString());
+            Cart cart = db.Carts.Where(c => c.id_customer == id_customer).FirstOrDefault();
+            List<CartDetail> listCart= db.CartDetails.Where(cd => cd.id_cart == cart.id_cart).ToList();
+            db.CartDetails.RemoveRange(listCart);
+            db.SaveChanges();
+            List<CartDetail> newListCart = new List<CartDetail>();
+            foreach(var item in (List<CartItem>)Session[CommonConstants.CartSession])
+            {
+                newListCart.Add(new CartDetail()
+                {
+                    amount = item.Amount,
+                    discriptionProductDetail = item.discriptionProductDetail,
+                    id_cart = cart.id_cart,
+                    id_product = item.Products.id_product,
+                    intoMoney = item.IntoMoney,
+                    price = item.Price 
+                });
+            }
+            db.CartDetails.AddRange(newListCart);
+            db.SaveChanges();
+        }
         
 
     }

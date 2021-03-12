@@ -4,7 +4,7 @@
 <div class="col-lg-3">
     <div class="header__cart">
         <ul>
-            <li><a href="/ShopCart/Index"><i class="fa fa-shopping-cart"></i> <span id="txtCountCart">@Model.Count</span></a></li>
+            <li><a href="/ShopCart/Index"><i class="fa fa-shopping-cart"></i> <span id="txtCountCart">@Session["Count"]</span></a></li>
         </ul>
         <div class="header__cart__price">Tổng giá trị:&nbsp;<span id="txtTotal">@Session["TotalCartSession"]</span>&nbsp;đ</div>
     </div>

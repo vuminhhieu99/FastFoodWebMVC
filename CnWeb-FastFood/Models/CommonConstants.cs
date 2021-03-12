@@ -14,5 +14,6 @@ namespace CnWeb_FastFood.Models
         public static string CartSession = "CartSession";
         public static string SubTotalCartSession = "SubTotalCartSession";
         public static string TotalCartSession = "TotalCartSession";
+        public static string Count = "Count";
     }
 }
