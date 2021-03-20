@@ -1,0 +1,27 @@
+﻿@model CnWeb_FastFood.Models.EF.UserGroup
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminlteLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>UserGroup</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_userGroup }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

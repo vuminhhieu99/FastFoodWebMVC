@@ -89,13 +89,12 @@ namespace CnWeb_FastFood.Controllers
                 string nameCus = db.Customers.Find(newBill.id_customer).name.ToString();
                 string content = System.IO.File.ReadAllText(Server.MapPath("~/Assets/Client/template/neworder.html"));
                 content = content.Replace("{{CustomerName}}", newBill.Customer.name);
-                content = content.Replace("{{Phone}}", newBill.phone);
-                content = content.Replace("{{Email}}", "không có");
+                content = content.Replace("{{Phone}}", newBill.phone);                
                 content = content.Replace("{{Address}}", newBill.address);
                 content = content.Replace("{{Total}}", newBill.total.ToString());
 
                 var toEmail = ConfigurationManager.AppSettings["ToEmailAddress"].ToString();
-                new MailHelper().SendMail(toEmail, "đơn hàng mới từ FastFood", content);
+                new MailHelper().SendMail(toEmail, "đơn hàng mới từ PizzaHut", content);
 
             }
             return RedirectToAction("Index", "CustomerBill");            

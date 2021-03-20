@@ -1,0 +1,47 @@
+﻿.ff-detail{
+    color: #206b97;
+}
+
+.ff-edit {
+    color: #05577b;
+}
+
+.ff-delete {
+    color: red;
+}
+
+tr td:last-child{
+    display: flex;
+    justify-content:space-around
+}
+table tr {
+    color: #206b97 !important;
+}
+.content-header {
+    color: #05577b;
+}
+.ff-btn-add {
+    background-color: #ff6800;
+    color: #ffffff;
+}
+
+    .ff-btn-add:hover {
+        background-color: #ffbc58;
+        color: #ffffff;
+    }
+
+.ff-btn-warning {
+    color: #ffffff;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    box-shadow: none;
+}
+
+    .ff-btn-warning:hover {
+        background-color: #ffd107;
+        color: #ffffff;
+    }
+
+img[name="avatar"]{
+    width:100%
+}

@@ -22,7 +22,7 @@ namespace CnWeb_FastFood.Areas.Admin.Controllers
         CategoryDao Cdao = new CategoryDao();
 
         // GET: Admin/Product
-        [HasCredential(id_role  ="VIEW_USER")]
+        [HasCredential(id_role ="VIEW_USER")]
         public ActionResult Index(int? page, int? PageSize, string searching = "")
         {
             ViewBag.SearchString = searching;

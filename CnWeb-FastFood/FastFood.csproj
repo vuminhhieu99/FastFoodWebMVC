@@ -322,6 +322,9 @@
     <Compile Include="Areas\Admin\Controllers\DiscountCodeController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
+    <Compile Include="Areas\Admin\Controllers\RoleController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserGroupsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Areas\Admin\Models\AdminCommonConstants.cs" />
     <Compile Include="Areas\Admin\Models\HasCredentialAttribute.cs" />
     <Compile Include="Areas\Admin\Models\ResultLogin.cs" />
@@ -348,6 +351,7 @@
     <Compile Include="Models\Dao\Admin\DiscountCodeDao.cs" />
     <Compile Include="Models\Dao\Admin\ProductDao.cs" />
     <Compile Include="Models\Dao\Admin\UserDao.cs" />
+    <Compile Include="Models\Dao\Admin\UserGroupDao.cs" />
     <Compile Include="Models\Dao\Client\ContactDao.cs" />
     <Compile Include="Models\Dao\Client\CustomerDao.cs" />
     <Compile Include="Models\Dao\Client\HomeProductDao.cs" />
@@ -372,6 +376,7 @@
     <Compile Include="Models\EF\User.cs" />
     <Compile Include="Models\EF\UserGroup.cs" />
     <Compile Include="Models\ProductView.cs" />
+    <Compile Include="Models\StatisticView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -488,6 +493,7 @@
     <Content Include="Areas\Admin\Content\Photos\special\sp8.png" />
     <Content Include="Areas\Admin\Content\Photos\special\sp9.png" />
     <Content Include="Areas\Admin\js\ProductsController.js" />
+    <Content Include="Assets\Admin\common\app.css" />
     <Content Include="Assets\Admin\Images\background.png" />
     <Content Include="Assets\Admin\Images\big logo.png" />
     <Content Include="Assets\Admin\Images\logo.png" />
@@ -2649,7 +2655,6 @@
     <Content Include="Areas\Admin\Views\Product\Filter.cshtml" />
     <Content Include="Areas\Admin\Views\Product\Index2.cshtml" />
     <Content Include="Areas\Admin\Views\Customer\Filter.cshtml" />
-    <Content Include="Areas\Admin\Views\Customer\Index2.cshtml" />
     <Content Include="Areas\Admin\Views\Category\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Category\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Category\Details.cshtml" />
@@ -2924,6 +2929,13 @@
     <Content Include="Areas\Admin\Views\Shared\_AdminlteLayout.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\error_401.cshtml" />
     <Content Include="Areas\Admin\Views\Login\Register.cshtml" />
+    <Content Include="Areas\Admin\Views\UserGroups\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\UserGroups\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\UserGroups\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\UserGroups\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\UserGroups\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Role\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Index.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile1.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile10.pubxml" />
@@ -2994,6 +3006,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Views\Users\" />
     <Folder Include="Areas\Client\Controllers\" />
     <Folder Include="Areas\Client\Models\" />
     <Folder Include="Areas\Client\Views\Shared\" />

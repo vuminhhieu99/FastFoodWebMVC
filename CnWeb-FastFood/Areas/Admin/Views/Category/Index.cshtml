@@ -104,7 +104,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="reset" class="btn btn-warning cancel">
+                        <button type="reset" class="btn ff-btn-warning cancel">
                             <i class="fas fa-sync-alt"></i>
                             <span>Làm mới</span>
                         </button>
@@ -167,7 +167,7 @@
                                             Search:
                                             <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="example1" name="searching" value="@ViewBag.SearchString">
                                         </label>
-                                        <input type="submit" class="btn btn-block btn-warning btn-sm" value="Tìm kiếm" />
+                                        <input type="submit" class="btn btn-block ff-btn-warning btn-sm" value="Tìm kiếm" />
                                     </div>
                                 </div>
                             </div>
@@ -178,13 +178,13 @@
                     <div class="card-body">
                         <!-- button -->
                         @*<div class="card-footer">*@
-                        <button type="button" class="btn btn-secondary" id="bt_createCategory" data-toggle="modal" data-target="#myModal">
+                        <button type="button" class="btn ff-btn-add" id="bt_createCategory" data-toggle="modal" data-target="#myModal">
                             <i class="fa fa-plus-square"></i> &nbsp;
                             Thêm mới
                         </button>
                         @*</div>*@
                         <!-- /.button-->
-                        <table id="example1" class="table table-bordered table-striped">
+                        <table id="example1" class="table table-striped">
                             <thead>
                                 <tr>
                                     <th>Mã thể loại</th>
@@ -206,16 +206,18 @@
                                         <td>
                                             <img height="20" src="/Areas/Admin/Content/Photos/@item.photo" alt="Chưa có" />
                                         </td>
-                                        <td>                                            
-                                            <i class="fa fa-edit"></i> &nbsp;
-                                            @Html.ActionLink("Sửa", "Edit", new { id = item.id_category }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                            <i class="fa fa-trash"></i> &nbsp;
-                                            @Ajax.ActionLink("Delete", "Delete", new { @id = item.id_category }, new AjaxOptions
-                                       {
-                                                Confirm = " Bạn có muốn xóa bản ghi này?",
-                                           OnComplete = "DelSuccess(\"" + @item.id_category + "\")",
-                                           HttpMethod = "Delete"
-                                       })
+                                        <td>
+                                            <a href="/Admin/Category/Edit/@item.id_category">
+                                                <i class="fa fa-edit fa-lg ff-edit">
+                                                </i>
+                                            </a>
+                                            <a data-ajax="true"
+                                               data-ajax-complete="DelSuccess(@item.id_category )"
+                                               data-ajax-confirm=" Bạn có muốn xóa bản ghi này?"
+                                               data-ajax-method="Delete" href="/Admin/Category/Delete/@item.id_category">
+                                                <i class="fa fa-trash fa-lg ff-delete">
+                                                </i>
+                                            </a>
                                         </td>
                                     </tr>
                                 }

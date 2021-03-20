@@ -18,11 +18,17 @@
     <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="/Assets/Admin/LTE/dist/css/adminlte.min.css">
+    <style>
+        p {
+            margin-bottom: 0;
+        }
+    </style>
+
 </head>
 <body class="hold-transition login-page" style="background-image: url(/Assets/Admin/Images/background.png); background-repeat:repeat-x repeat-y">
     <div class="login-box">
         <div class="login-logo">
-            <img src="/Assets/Admin/Images/big logo.png" style="margin-left:auto; margin-right:auto; display:block; width:220px; height:130px" />
+            <img src="/Assets/Admin/Images/big logo.png" style="margin-left:auto; margin-right:auto; display:block; width:220px;" />
 
         </div>
         <!-- /.login-logo -->
@@ -31,36 +37,56 @@
                 <p class="login-box-msg">Đăng ký</p>
                 @Html.ValidationMessage("result")
                 @using (Ajax.BeginForm("CreateAccount", "Login", new AjaxOptions { HttpMethod = "POST", OnComplete = "fnAddSuccess", OnFailure = "fnAddFail" },
-new {  @enctype = "multipart/form-data" }))
-                { 
-           
-                <div class="input-group mb-3">
-                    <input name="inputUserName" type="text" class="form-control" placeholder="Username">
-                    <div class="input-group-append">
-                        <div class="input-group-text">
-                            <span class="fas fa-envelope"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="input-group mb-3">
-                    <input name="UserPassword" type="password" class="form-control" placeholder="Password">
-                    <div class="input-group-append">
-                        <div class="input-group-text">
-                            <i class="fas fa-key"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
+new { @enctype = "multipart/form-data" }))
+                {
+                    <p>Tên đăng nhập</p>
+                    <div class="input-group mb-3">
 
+                        <input name="inputUserName" type="text" class="form-control" placeholder="Tên đăng nhập">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
                     </div>
-                    <!-- /.col -->
-                    <div class="col-4">
-                        <button type="submit" class="btn btn-primary btn-block">Đăng ký</button>
+                    <p>Mật khẩu</p>
+                    <div class="input-group mb-3">
+                        <input name="userPassword" type="password" class="form-control" placeholder="Mật khẩu">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <i class="fas fa-key"></i>
+                            </div>
+                        </div>
                     </div>
-                    <!-- /.col -->
-                </div>
-            }
+                    <p>Tên đầy đủ</p>
+                    <div class="input-group mb-3">
+                        <input name="name" type="password" class="form-control" placeholder="Tên đầy đủ">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <i class="fas fa-font"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Email</p>
+                    <div class="input-group mb-3">
+                        <input name="email" type="password" class="form-control" placeholder="Email">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-primary btn-block">Đăng ký</button>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                }
 
                 <p class="mb-1">
                     @Html.ActionLink("Đăng nhập", "index")

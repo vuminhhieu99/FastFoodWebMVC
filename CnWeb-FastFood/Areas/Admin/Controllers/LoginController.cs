@@ -6,6 +6,8 @@ using System.Web.Mvc;
 using CnWeb_FastFood.Models.Dao.Admin;
 using CnWeb_FastFood.Models;
 using CnWeb_FastFood.Areas.Admin.Models;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace CnWeb_FastFood.Areas.Admin.Controllers
 {
@@ -20,7 +22,7 @@ namespace CnWeb_FastFood.Areas.Admin.Controllers
             }
             return View();
         }
-
+       
         public ActionResult Login(FormCollection collection)
         {
             if (ModelState.IsValid)

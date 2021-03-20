@@ -1,0 +1,390 @@
+﻿@model PagedList.IPagedList<CnWeb_FastFood.Models.EF.User>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminlteLayout.cshtml";
+}
+@section Styles{
+    <title>FastFood| DiscountCode</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/fontawesome-free/css/all.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/dist/css/adminlte.min.css">
+
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/toastr/toastr.min.css">
+
+    <style>
+        body {
+            padding-right: 0 !important
+        }
+    </style>
+
+}
+
+<!-- Create Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            @using (Ajax.BeginForm("CreateUserJson", "User", new AjaxOptions { HttpMethod = "POST", OnComplete = "fnAddSuccess", OnFailure = "fnAddFail" },
+    new { @name = "myDropzone", id = "CreateDiscountCode", @enctype = "multipart/form-data" }))
+            {
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Mã giảm giá mới</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Họ và tên</label>
+                            <input type="text" class="form-control" id="name" placeholder="Tên đăng nhập" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="text" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Tên đăng nhập</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Tên đăng nhập" name="userName">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Mật khẩu</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-md-12 ">
+                                <label for="exampleInputEmail1">Nhóm</label>
+                                <div class="row">
+                                    @Html.DropDownList("id_userGroup", (IEnumerable<SelectListItem>)ViewBag.UserGroup, "  --  Loại nhóm  --  ", new { @class = "form-control col-md-7" })
+                                    <div class="col-md-5">
+                                        <div class="form-check col-md-7 navbar-nav ml-auto">
+                                            <input type="checkbox" class="form-check-input" id="id_userGroup" value="true" name="id_userGroup">
+                                            <label class="form-check-label" for="availability">Có sẵn</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="reset" class="btn ff-btn-warning cancel">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Làm mới</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <input type="submit" id="Submit" name="Submit" class="btn btn-primary" value="Lưu" />
+
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+<!-- /. Create Modal -->
+<!-- Header content -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Danh sách thể loại</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Mã giảm giá</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- /.Header content -->
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <!-- card-header -->
+                    <div class="card-header">
+                        <!-- control content -->
+                        @using (Html.BeginForm("Index", "DiscountCode", FormMethod.Get, new { id = "form1" }))
+                        {
+                            <div class="row dataTables_wrapper">
+
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="dataTables_length" id="example1_length">
+                                        <label>
+                                            Show
+                                            @Html.DropDownList("PageSize", (IEnumerable<SelectListItem>)ViewBag.PageSize, new { @class = "custom-select custom-select-sm form-control form-control-sm" })
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div id="example1_filter" class="dataTables_filter">
+                                        <label>
+                                            Search:
+                                            <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="example1" name="searching" value="@ViewBag.SearchString">
+                                        </label>
+                                        <input type="submit" class="btn btn-block ff-btn-warning btn-sm" value="Tìm kiếm" />
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        <!-- /.control content -->
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <!-- button -->
+                        @*<div class="card-footer">*@
+                        <button type="button" class="btn ff-btn-add" data-toggle="modal" data-target="#myModal">
+                            <i class="fa fa-plus-square"></i> &nbsp;
+                            Thêm mới
+                        </button>
+                        @*</div>*@
+                        <!-- /.button-->
+                        <table id="example1" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Mã người dùng</th>
+                                    <th>Tên đăng nhập</th>
+                                    <th>Email</th>
+                                    <th>Họ và tên</th>
+                                    <th>Nhóm quyền</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr id="row_@item.id_user">
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.id_user)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.userName)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.email)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.name)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.UserGroup.name)
+                                        </td>
+                                        <td>
+                                            <a href="/Admin/User/Edit/@item.id_user">
+                                                <i class="fa fa-edit fa-lg ff-edit">
+                                                </i>
+                                            </a>
+                                            <a data-ajax="true"
+                                               data-ajax-complete="DelSuccess(@item.id_user.ToString())"
+                                               data-ajax-confirm=" Bạn có muốn xóa bản ghi này?"
+                                               data-ajax-method="Delete" href="/Admin/User/Delete/@item.id_user">
+                                                <i class="fa fa-trash fa-lg ff-delete">
+                                                </i>
+                                            </a>
+
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+                        <!-- phân trang -->
+                        <div class="row dataTables_wrapper">
+
+                            <div class="col-sm-12 col-md-6">
+                                <b style="color:navy">
+                                    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount &nbsp;&nbsp;-&nbsp;&nbsp;
+                                    @if (Model.Count == ViewBag.psize)
+                                    {
+                                        <span>Đang hiển thị (@(((Model.PageNumber * Model.Count) - Model.Count) + 1)-<span class="countItemofPage">@(Model.PageNumber * Model.Count)</span>) / <span class="countItem">@ViewBag.Count</span></span>
+                                    }
+                                    else
+                                    {
+                                        <span>Đang hiển thị (@((ViewBag.Count - Model.Count) + 1)-<span class="countItem">@ViewBag.Count</span>) / <span class="countItem">@ViewBag.Count</span></span>
+                                    }
+                                </b>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                @Html.PagedListPager(Model, page => Url.Action("Index", new { page, pageSize = ViewBag.psize, @searching = @ViewBag.SearchString }), new PagedListRenderOptions
+                           {
+
+                               ContainerDivClasses = new string[] { "dataTables_paginate", "paging_simple_numbers" },
+                               LiElementClasses = new string[] { "paginate_button", "page-item" }
+
+                           })
+                            </div>
+                        </div>
+
+                        <!-- /.phân trang -->
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+
+@section Scripts{
+    <script src="/Assets/Admin/LTE/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/Assets/Admin/LTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables -->
+    <script src="/Assets/Admin/LTE/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/Assets/Admin/LTE/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="/Assets/Admin/LTE/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="/Assets/Admin/LTE/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/Assets/Admin/LTE/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="/Assets/Admin/LTE/dist/js/demo.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="/Assets/Admin/LTE/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- Toastr -->
+    <script src="/Assets/Admin/LTE/plugins/toastr/toastr.min.js"></script>
+
+    <script src="/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#example1").DataTable({
+                "paging": false,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": false,
+                "autoWidth": false,
+                "responsive": true,
+
+            });
+
+            // reset then open modal create DiscountCode
+            $('#bt_createDiscountCode').click(function () {
+                document.getElementById("CreateDiscountCode").reset();
+            });
+            //----------------//
+
+            // reset then open modal create Category
+            $('#bt_createCategory').click(function () {
+                document.getElementById("CreateCategory").reset();
+                Dropzone.forElement("#CreateCategory").removeAllFiles(true);
+            });
+            //----------------//
+
+
+        });
+        // reponse after creat DiscountCode
+        function fnAddSuccess(data) {
+            var res = JSON.parse(data.responseText);
+            if (res.status == true) {
+                $('.modal').css('display', 'none');
+                toastr.success('Tạo mới thành công id : ' + res.id_DiscountCode);
+                setTimeout(function () {
+                    window.location.reload();
+                }, 3000);
+            }
+            else {
+                $('.modal-body > .card-body').append("<p>! Không thể lưu. Vui lòng kiểm tra lại dữ liệu</p>");
+            }
+        };
+
+        function fnAddFail(data) {
+            $('.modal-body > .card-body').append("<p>! Lỗi hệ thống</p>");
+        };
+        //-------------//
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            //add class for slidebar
+            $('#user').addClass('menu-open');
+            $('#user>a').addClass('active');
+            $('#user ul a').addClass('active');
+            //--------------//
+
+            //load data with change pagesize
+            $("#PageSize").change(function () {
+                $("#form1").submit();
+            });
+            //-------------//
+
+            // set class css for ỉtemPage- because pagelist not compatial boostrap 4 in this version of adminLTE
+            $('.pagination a').addClass('page-link');
+            //-------------//
+
+            // check for the same user name
+            $('#CreateDiscountCode #id_user').on('input', function () {
+                var id_user = this.value;
+                var ref = this;
+
+                if (id_user == "") {
+                    $('#CreateDiscountCode .text-success').remove();
+                    $('#CreateDiscountCode .text-danger').remove();
+                    return false;
+                }
+                $.ajax({
+                    url: '/Admin/DiscountCode/CheckDiscountCode',
+                    data: { id_user: id_user },
+                    dataType: 'text',
+                    type: "POST"
+                }).done(function (res) {
+                    var status = JSON.parse(res).status;
+                    $('#CreateDiscountCode .text-success').remove();
+                    $('#CreateDiscountCode .text-danger').remove();
+                    if (status == true) {
+                        $(ref).parent().after('<p class="text-danger"><i class="fas fa-exclamation"></i> Mã giảm giá đã tồn tại</p>');
+                    }
+                    else {
+                        $(ref).parent().after('<p class="text-success"><i class="fas fa-check"></i> Có thẻ sử dụng</p>');
+                    }
+                });
+            });
+            //---------------------//
+        });
+
+        // reponse after delete DisCountCode
+        function DelSuccess(id_user) {
+            var idTrs = "#row_" + id_user;
+            $(idTrs).remove();
+            var countItem = $('.countItem').last().text();
+            countItem = Number(countItem) - 1;
+            $('.countItem').text(countItem);
+
+            var countItemofPage = $('.countItemofPage').first().text();
+            countItemofPage = Number(countItemofPage) - 1;
+            $('.countItemofPage').text(countItemofPage);
+
+            var Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 5000
+            });
+            Toast.fire({
+                icon: 'success',
+                title: ' complish delete witd id ' + id_user
+            })
+        };
+                //---------------------//
+    </script>
+}

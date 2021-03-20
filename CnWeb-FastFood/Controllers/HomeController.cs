@@ -10,6 +10,7 @@ using System.Web.Mvc;
 using CnWeb_FastFood.Models;
 using CnWeb_FastFood.Models.Dao.Client;
 using CnWeb_FastFood.Models.EF;
+using PagedList;
 
 namespace CnWeb_FastFood.Controllers
 {
@@ -17,10 +18,12 @@ namespace CnWeb_FastFood.Controllers
     {
         // GET: Home
         private SnackShopDBContext db = new SnackShopDBContext();
-        public ActionResult Index(string keyword, string catelogyString)
+        public ActionResult Index(string keyword, string catelogyString, int? page, int? PageSize)
         {
             ViewBag.Keyword = keyword;
             ViewBag.catelogyString = catelogyString;
+            int pageNumber = (page ?? 1);
+            int pagesize = (PageSize ?? 10);
             IEnumerable<ProductView> list;
             if (catelogyString == "All Categories")
             {
@@ -30,16 +33,17 @@ namespace CnWeb_FastFood.Controllers
             if (!string.IsNullOrEmpty(keyword))
             {
                 list = db.Database.SqlQuery<ProductView>($"SELECT p.id_product, p.name as productName, p.id_category, c.name as categoryName, p.availability, p.price, p.salePercent, p.salePrice, p.rate, p.[view] , p.mainPhoto, p.updated " +
-                $"FROM dbo.Product p LEFT JOIN dbo.Category c ON c.id_category = p.id_category where c.[name] LIKE N'%{catelogyString}%'").ToList();
+                $"FROM dbo.Product p LEFT JOIN dbo.Category c ON c.id_category = p.id_category where c.[name] LIKE N'%{catelogyString}%'").ToPagedList<ProductView>(pageNumber, pagesize); 
             }
-
+           
             list = db.Database.SqlQuery<ProductView>($"SELECT p.id_product, p.name as productName, p.id_category, c.name as categoryName, p.availability, p.price, p.salePercent, p.salePrice, p.rate, p.[view], p.mainPhoto, p.updated " +
             $"FROM dbo.Product p LEFT JOIN dbo.Category c ON c.id_category = p.id_category " +
-            $"WHERE c.[name] LIKE N'%{catelogyString}%' AND p.name LIKE N'%{keyword}%'").ToList();
+            $"WHERE c.[name] LIKE N'%{catelogyString}%' AND p.name LIKE N'%{keyword}%'").ToPagedList<ProductView>(pageNumber, pagesize);
 
+            ViewBag.psize = pagesize;
             ViewBag.ProductSearchList = list;
             ViewBag.ProductAllList = db.Products.ToList();
-
+            ViewBag.Count = db.Products.Count();
             return View(list);
         }
         public ActionResult CategoryShow()

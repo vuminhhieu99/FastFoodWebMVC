@@ -125,7 +125,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="reset" class="btn btn-warning cancel">
+                        <button type="reset" class="btn ff-btn-warning cancel">
                             <i class="fas fa-sync-alt"></i>
                             <span>Làm mới</span>
                         </button>
@@ -187,7 +187,7 @@
                                             Search:
                                             <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="example1" name="searching" value="@ViewBag.SearchString">
                                         </label>
-                                        <input type="submit" class="btn btn-block btn-warning btn-sm" value="Tìm kiếm" />
+                                        <input type="submit" class="btn btn-block ff-btn-warning btn-sm" value="Tìm kiếm" />
                                         <button type="button" class="btn btn-secondary">
                                             <i class="fa fa-filter"></i> &nbsp;
                                             @Html.ActionLink("Bộ lọc", "Filter", "Customer", new { @style = "color:white" })
@@ -202,13 +202,13 @@
                     <div class="card-body">
                         <!-- button -->
                         @*<div class="card-footer">*@
-                        <button type="button" class="btn btn-secondary" id="bt_createCustomer" data-toggle="modal" data-target="#myModal">
+                        <button type="button" class="btn ff-btn-add" id="bt_createCustomer" data-toggle="modal" data-target="#myModal">
                             <i class="fa fa-plus-square"></i> &nbsp;
                             Thêm mới
                         </button>
                         @*</div>*@
                         <!-- /.button-->
-                        <table id="example1" class="table table-bordered table-striped">
+                        <table id="example1" class="table table-striped">
                             <thead>
                                 <tr>
                                     <th>Mã khách hàng</th>
@@ -243,16 +243,21 @@
                                             <img height="20" src="~/Areas/Admin/Content/Photos/@item.avatar" alt="Chưa có" />
                                         </td>
                                         <td>
-                                            <i class="fa fa-info-circle"></i> &nbsp;
-                                            @Html.ActionLink("Xem", "Details", new { id = item.id_customer }, new { onclick = "DelSuccess()" }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                            <i class="fa fa-edit"></i> &nbsp;
-                                            @Html.ActionLink("Sửa", "Edit", new { id = item.id_customer }) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                            <i class="fa fa-trash"></i> &nbsp;
-                                            @Ajax.ActionLink("Delete","Delete", new { @id = item.id_customer }, new AjaxOptions
-                                        {   Confirm =" Bạn có muốn xóa bản ghi này?",
-                                            OnComplete = "DelSuccess(\"" + @item.id_customer + "\")",
-                                            HttpMethod = "Delete"
-                                        })
+                                            <a href="/Admin/Customer/Details/@item.id_customer">
+                                                <i class="fa fa-info-circle fa-lg ff-detail"></i>
+                                            </a>
+
+                                            <a href="/Admin/Customer/Edit/@item.id_customer">
+                                                <i class="fa fa-edit fa-lg ff-edit">
+                                                </i>
+                                            </a>
+                                            <a data-ajax="true"
+                                               data-ajax-complete="DelSuccess(@item.id_customer )"
+                                               data-ajax-confirm=" Bạn có muốn xóa bản ghi này?"
+                                               data-ajax-method="Delete" href="/Admin/Customer/Delete/@item.id_customer">
+                                                <i class="fa fa-trash fa-lg ff-delete">
+                                                </i>
+                                            </a>                                            
                                         </td>
                                     </tr>
                                 }

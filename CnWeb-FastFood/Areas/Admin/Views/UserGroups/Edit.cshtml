@@ -1,0 +1,211 @@
+﻿@model CnWeb_FastFood.Models.EF.UserGroup
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "/Areas/Admin/Views/Shared/_AdminlteLayout.cshtml";
+}
+
+@section Styles{
+    <title>AdminLTE 3 | Category</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/fontawesome-free/css/all.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/dist/css/adminlte.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+
+
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="/Assets/Admin/LTE/plugins/toastr/toastr.min.css">
+
+
+}
+<!-- Header content -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Danh sách nhóm người dùng</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">nhóm người dùng</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<!-- /.Header content -->
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="card">
+            <form id="editForm">
+                <div class="card-header">
+                    <button type="button" class="btn btn-default float-right">
+                        <a class="fa fa-th-list"></a> &nbsp;
+                        @Html.ActionLink("Danh sách", "Index")
+                    </button>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Mã nhóm người dùng</label>
+                                <input type="text" class="form-control" name="id_userGroup" placeholder="Mã nhóm người dùng" value="@Model.id_userGroup">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Tên nhóm người dùng</label>
+                                <input type="text" class="form-control" name="name" placeholder="Mã nhóm người dùng" value="@Model.name">
+                            </div>
+                            <div class="form-group">
+                                <label>Nhóm quyền</label>
+                                <div class="select2-purple">
+                                    <select name="listRole" class="select2" multiple="multiple" data-placeholder="Select a State" data-dropdown-css-class="select2-purple" style="width: 100%;">
+                                        @foreach (var option in ViewBag.listRole)
+                                        {
+                                            bool isHave = false;
+                                            foreach (var item in Model.Credentials)
+                                            {
+                                                if (option.id_role == item.id_role)
+                                                {
+                                                    isHave = true;
+                                                }
+
+                                            }
+                                            if (isHave == true)
+                                            {
+                                                <option value="@option.id_role" selected>@option.name</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@option.id_role">@option.name</option>
+                                            }
+
+
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+
+                            <button type="reset" class="btn ff-btn-warning cancel">
+                                <i class="fas fa-sync-alt"></i>
+                                <span>&nbsp;&nbsp;reset</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-center">
+                    <input type="submit" id="Submit" name="Submit" class="btn btn-primary col-6" value="Lưu" />
+                </div>
+            </form>
+               
+           
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+
+
+
+
+@section Scripts{
+    <script src="/Assets/Admin/LTE/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/Assets/Admin/LTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AdminLTE App -->
+    <script src="/Assets/Admin/LTE/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="/Assets/Admin/LTE/dist/js/demo.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="/Assets/Admin/LTE/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- Toastr -->
+    <script src="/Assets/Admin/LTE/plugins/toastr/toastr.min.js"></script>
+    <!-- Select2 -->
+    <script src="/Assets/Admin/LTE/plugins/select2/js/select2.full.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            //Initialize Select2 Elements
+            $('.select2').select2();
+            //Initialize Select2 Elements
+            $('.select2bs4').select2({
+                theme: 'bootstrap4'
+            });
+            //add class for slidebar
+            $('#discountCode').addClass('menu-open');
+            $('#discountCode>a').addClass('active');
+            $('#discountCode ul a').addClass('active');
+            //--------------//
+            //--------------//
+
+            //set status of checkbox
+            $('.content input:checkbox').each(function (i, item) {
+                if ($(item).data('val') == "True") {
+                    $(item).attr('checked', 'checked');
+                }
+            });
+            //-------------------//
+
+            // Sửa nhóm quyền + thêm quyền cho nhóm
+            $('#Submit').off('click').on('click', function (e) {
+                e.preventDefault();
+                var id_userGroup = $('#editForm input[name="id_userGroup"]').val();
+                var name = $('#editForm input[name="name"]').val();
+                var listRole = $('#editForm select[name="listRole"]').val();
+                var userGroup = { id_userGroup: id_userGroup, name: name };
+
+
+                $.ajax({
+                    url: '/Admin/UserGroups/editUserGroupsJson',
+                    data: { userGroup: JSON.stringify(userGroup), listRole: JSON.stringify(listRole) },
+                    dataType: 'json',
+                    type: "POST",
+                    success: function (res) {
+                        fnAddSuccess(res);
+                    },
+                    error: function () {
+                        fnAddFail();
+                    },
+                });
+            });
+
+            // reponse after creat Product
+            function fnAddSuccess(res) {
+
+                if (res.status == true) {
+                    $('.modal').css('display', 'none');
+                    toastr.success('Chỉnh sửa thành công');
+                    setTimeout(function () {
+                        window.location.href = "/Admin/UserGroups/Index";
+                    }, 2000);
+                }
+                else {
+                    $('.modal-body > .card-body').append("<p>! Không thể lưu. Vui lòng kiểm tra lại dữ liệu</p>");
+                }
+            };
+
+            function fnAddFail() {
+                $('.modal-body > .card-body').append("<p>! Lỗi hệ thống</p>");
+            };
+        //-------------//
+        });
+    </script>
+}

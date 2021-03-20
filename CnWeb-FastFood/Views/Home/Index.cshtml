@@ -1,4 +1,5 @@
-﻿@model IEnumerable<CnWeb_FastFood.Models.ProductView>
+﻿@model PagedList.IPagedList<CnWeb_FastFood.Models.ProductView>
+@using PagedList.Mvc
 @{
     ViewBag.Title = "Index";
     Layout = "/Views/Shared/_MainLayout.cshtml";
@@ -16,8 +17,8 @@
     <link rel="stylesheet" href="/Assets/Client/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="/Assets/Client/css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="/Assets/Client/css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="/Assets/Client/css/slicknav.min.css" type="text/css">    
-    @Styles.Render("~/bundles/css/base");
+    <link rel="stylesheet" href="/Assets/Client/css/slicknav.min.css" type="text/css">
+    @Styles.Render("~/bundles/css/base")
 }
 
 @Html.Partial("_BeginContentLayoutHome")
@@ -43,7 +44,7 @@
         @Html.Action("ListCategoryShow")
 
         <div class="row featured__filter">
-            @foreach (var item in ViewBag.ProductAllList)
+            @foreach (var item in Model)
             {
                 var filterName = "c" + item.id_category;
                 <div class="col-lg-3 col-md-4 col-sm-6 mix @filterName">
@@ -55,14 +56,40 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="/ShopDetail/Index/@item.id_product">@item.name</a></h6>
+                            <h6><a href="/ShopDetail/Index/@item.id_product">@item.productName</a></h6>
                             <h5>@item.salePrice đ</h5>
                         </div>
                     </div>
                 </div>
             }
         </div>
+        <!-- phân trang -->
+        <div class="row dataTables_wrapper">
 
+
+            <div>
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page, pageSize = ViewBag.psize, @searching = @ViewBag.SearchString }), new PagedListRenderOptions
+            {
+
+                ContainerDivClasses = new string[] { "dataTables_paginate", "paging_simple_numbers" },
+                LiElementClasses = new string[] { "paginate_button", "page-item" }
+
+            })
+            </div>
+            <div class="ml-auto">
+                <b style="color:navy">
+                    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount &nbsp;&nbsp;-&nbsp;&nbsp;
+                    @if (Model.Count == ViewBag.psize)
+                    {
+                        <span>Đang hiển thị (@(((Model.PageNumber * Model.Count) - Model.Count) + 1)-<span class="countItemofPage">@(Model.PageNumber * Model.Count)</span>) / <span class="countItem">@ViewBag.Count</span></span>
+                    }
+                    else
+                    {
+                        <span>Đang hiển thị (@((ViewBag.Count - Model.Count) + 1)-<span class="countItem">@ViewBag.Count</span>) / <span class="countItem">@ViewBag.Count</span></span>
+                    }
+                </b>
+            </div>
+        </div>
     </div>
 </section>
 <!-- Featured Section End -->
@@ -97,5 +124,16 @@
         window.onload = function () {
             $('.MenuHome').attr("class", "active");
         }
+        $(function () {
+            //load data with change pagesize
+            $("#PageSize").change(function () {
+                $("#form1").submit();
+            });
+            //-------------//
+
+            // set class css for ỉtemPage- because pagelist not compatial boostrap 4 in this version of adminLTE
+            $('.pagination a').addClass('page-link');
+            //-------------//
+        });
     </script>
 }
